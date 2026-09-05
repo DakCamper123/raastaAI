@@ -5,7 +5,7 @@
  * Typewriter effect revealing the Chandni Chowk -> Kerala ghat -> rural highway quote word by word.
  */
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 
 interface AnimatedTaglineProps {
   text?: string;
@@ -21,42 +21,55 @@ export function AnimatedTagline({
   speedMs = 80,
   className = '',
 }: AnimatedTaglineProps) {
-  const [displayedWords, setDisplayedWords] = useState<string[]>([]);
-  const words = text.split(' ');
+  const words = useMemo(() => (text ? text.split(' ') : []), [text]);
+  const [visibleCount, setVisibleCount] = useState<number>(0);
 
   useEffect(() => {
-    let index = 0;
-    setDisplayedWords([]);
+    setVisibleCount(0);
+    if (!words.length) return;
 
     const interval = setInterval(() => {
-      if (index < words.length) {
-        setDisplayedWords((prev) => [...prev, words[index]]);
-        index++;
-      } else {
+      setVisibleCount((prev) => {
+        if (prev < words.length) {
+          return prev + 1;
+        }
         clearInterval(interval);
-      }
+        return prev;
+      });
     }, speedMs);
 
     return () => clearInterval(interval);
-  }, [text, speedMs]);
+  }, [words, speedMs]);
+
+  const displayedWords = words.slice(0, visibleCount);
 
   return (
     <blockquote className={`relative font-display text-lg sm:text-xl md:text-2xl font-medium text-[var(--text-primary)] leading-relaxed italic ${className}`}>
       <span>&ldquo;</span>
-      {displayedWords.map((word, idx) => (
-        <span
-          key={idx}
-          className={`inline-block mr-1.5 transition-opacity duration-150 ${
-            word.includes('Chandni') || word.includes('Kerala') || word.includes('Planet')
-              ? 'text-[var(--accent-cyan)] font-bold not-italic'
-              : ''
-          }`}
-        >
-          {word}
-        </span>
-      ))}
+      {displayedWords.map((word, idx) => {
+        if (!word) return null;
+        const isHighlight =
+          word.includes('Chandni') ||
+          word.includes('Kerala') ||
+          word.includes('Planet') ||
+          word.includes('Earth');
+
+        return (
+          <span
+            key={`${idx}-${word}`}
+            className={`inline-block mr-1.5 transition-opacity duration-150 ${
+              isHighlight
+                ? 'text-[var(--accent-cyan)] font-bold not-italic'
+                : ''
+            }`}
+          >
+            {word}
+          </span>
+        );
+      })}
       <span className="inline-block w-2.5 h-6 bg-[var(--accent-cyan)] ml-1 animate-pulse align-middle" />
       <span>&rdquo;</span>
     </blockquote>
   );
 }
+
