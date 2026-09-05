@@ -5,7 +5,7 @@
  * Typewriter effect revealing the Chandni Chowk -> Kerala ghat -> rural highway quote word by word.
  */
 
-import React, { useState, useEffect, useMemo } from 'react';
+import React, { useState, useEffect } from 'react';
 
 interface AnimatedTaglineProps {
   text?: string;
@@ -21,15 +21,13 @@ export function AnimatedTagline({
   speedMs = 80,
   className = '',
 }: AnimatedTaglineProps) {
-  const words = useMemo(() => (text ? text.split(' ') : []), [text]);
-  const [visibleCount, setVisibleCount] = useState<number>(0);
+  const words = React.useMemo(() => (text || '').split(/\s+/).filter(Boolean), [text]);
+  const [displayedCount, setDisplayedCount] = useState(0);
 
   useEffect(() => {
-    setVisibleCount(0);
-    if (!words.length) return;
-
+    setDisplayedCount(0);
     const interval = setInterval(() => {
-      setVisibleCount((prev) => {
+      setDisplayedCount((prev) => {
         if (prev < words.length) {
           return prev + 1;
         }
@@ -41,26 +39,18 @@ export function AnimatedTagline({
     return () => clearInterval(interval);
   }, [words, speedMs]);
 
-  const displayedWords = words.slice(0, visibleCount);
-
   return (
     <blockquote className={`relative font-display text-lg sm:text-xl md:text-2xl font-medium text-[var(--text-primary)] leading-relaxed italic ${className}`}>
       <span>&ldquo;</span>
-      {displayedWords.map((word, idx) => {
-        if (!word) return null;
+      {words.slice(0, displayedCount).map((word, idx) => {
         const isHighlight =
-          word.includes('Chandni') ||
-          word.includes('Kerala') ||
-          word.includes('Planet') ||
-          word.includes('Earth');
-
+          Boolean(word) &&
+          (word.includes('Chandni') || word.includes('Kerala') || word.includes('Planet'));
         return (
           <span
-            key={`${idx}-${word}`}
+            key={idx}
             className={`inline-block mr-1.5 transition-opacity duration-150 ${
-              isHighlight
-                ? 'text-[var(--accent-cyan)] font-bold not-italic'
-                : ''
+              isHighlight ? 'text-[var(--accent-cyan)] font-bold not-italic' : ''
             }`}
           >
             {word}
