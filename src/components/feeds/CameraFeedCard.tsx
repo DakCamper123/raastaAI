@@ -11,37 +11,49 @@ import { GlassCard } from '@/components/ui/GlassCard';
 import { Eye } from 'lucide-react';
 
 export function CameraFeedCard({ feed }: { feed: CameraFeedInfo }) {
+  // Clean, condensed label
+  const shortLabel = feed.label
+    .replace('Front Primary 4K Telephoto (120°)', 'Front 4K (120°)')
+    .replace('Left Lateral Fisheye (180°)', 'Left Fisheye (180°)')
+    .replace('Right Lateral Fisheye (180°)', 'Right Fisheye (180°)');
+
   return (
-    <GlassCard className="relative overflow-hidden p-2 flex flex-col gap-2 font-mono text-[10px]">
+    <GlassCard className="relative overflow-hidden p-1.5 flex flex-col gap-1 font-mono text-[9px]">
       {/* Header Bar */}
-      <div className="flex items-center justify-between px-1">
-        <span className="flex items-center gap-1.5 text-[var(--text-primary)] font-bold truncate">
-          <Eye className="w-3 h-3 text-[var(--accent-amber)]" />
-          {feed.label}
+      <div className="flex items-center justify-between px-0.5 leading-none">
+        <span className="flex items-center gap-1 text-[var(--text-primary)] font-bold text-[8px] truncate">
+          <Eye className="w-2.5 h-2.5 text-[var(--accent-amber)] shrink-0" />
+          <span className="truncate">{shortLabel}</span>
         </span>
-        <span className="inline-flex items-center gap-1 px-1.5 py-0.5 rounded bg-[var(--danger-red)]/20 text-[var(--danger-red)] font-bold animate-live-blink">
-          <span className="w-1.5 h-1.5 rounded-full bg-[var(--danger-red)]" />
+        <span className="inline-flex items-center gap-0.5 px-1 py-0.5 rounded bg-[var(--danger-red)]/20 text-[var(--danger-red)] font-bold text-[7px] animate-live-blink shrink-0">
+          <span className="w-1 h-1 rounded-full bg-[var(--danger-red)]" />
           LIVE
         </span>
       </div>
 
-      {/* Feed Visual Container */}
-      <div className="relative aspect-video rounded-lg overflow-hidden border border-[var(--border-subtle)] bg-black">
+      {/* Compact Feed Visual Container */}
+      <div className="relative h-14 w-full rounded overflow-hidden border border-[var(--border-subtle)] bg-black">
         {/* Synthetic or image background */}
         <img
           src={feed.imageFallback}
-          alt={feed.label}
-          className="w-full h-full object-cover opacity-80"
+          alt=""
+          className="w-full h-full object-cover opacity-70"
         />
 
         {/* HUD Crosshairs Overlay */}
-        <div className="absolute inset-0 pointer-events-none">
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-6 h-6 border border-[var(--accent-cyan)]/40 rounded-full" />
-          <div className="absolute top-2 left-2 text-[9px] bg-black/60 px-1.5 py-0.5 rounded text-[var(--accent-cyan)]">
-            DETECTIONS: {feed.detectionsCount}
+        <div className="absolute inset-0 pointer-events-none flex flex-col justify-between p-1 bg-gradient-to-t from-black/80 via-transparent to-black/30">
+          <div className="flex items-center justify-between">
+            <span className="text-[7px] font-mono bg-black/70 px-1 py-0.2 rounded text-[var(--accent-cyan)] font-bold">
+              {feed.detectionsCount} OBJS
+            </span>
+            <span className="text-[7px] font-mono bg-black/70 px-1 py-0.2 rounded text-[var(--text-muted)]">
+              {feed.fps} FPS
+            </span>
           </div>
-          <div className="absolute bottom-2 right-2 text-[9px] bg-black/60 px-1.5 py-0.5 rounded text-[var(--text-secondary)]">
-            {feed.resolution} @ {feed.fps}FPS
+
+          <div className="flex items-center justify-between text-[6.5px] font-mono text-white/70">
+            <span>{feed.resolution.split('x')[1]}p</span>
+            <span>{feed.latencyMs}ms</span>
           </div>
         </div>
       </div>

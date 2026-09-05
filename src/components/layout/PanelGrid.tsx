@@ -36,7 +36,7 @@ export function PanelGrid({
         <div className="relative h-full overflow-hidden rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)] flex flex-col">
           {canvas}
           {feeds && (
-            <div className="absolute bottom-4 right-4 z-20 max-w-sm hidden xl:block">
+            <div className="absolute bottom-3 right-3 z-20 w-64 max-w-[260px] hidden xl:block">
               {feeds}
             </div>
           )}
