@@ -81,16 +81,17 @@ export function StickyHeader() {
             <ThemeToggle />
 
             {/* Emergency SOS Button */}
-            <GlowButton
-              variant="danger"
-              size="sm"
-              icon={<AlertTriangle className="w-4 h-4 animate-bounce" />}
-              onClick={triggerEmergency}
-              title="Trigger Instant Fail-Safe E-Brake (Ctrl+Shift+E)"
-              aria-label="Trigger Emergency SOS"
-            >
-              <span className="hidden sm:inline">Emergency</span> SOS
-            </GlowButton>
+            <Link href="/emergency-sos">
+              <GlowButton
+                variant="danger"
+                size="sm"
+                icon={<AlertTriangle className="w-4 h-4 animate-bounce" />}
+                title="Dedicated ASIL-D Emergency SOS Page (Ctrl+Shift+E)"
+                aria-label="Open Emergency SOS Page"
+              >
+                <span className="hidden sm:inline">Emergency</span> SOS
+              </GlowButton>
+            </Link>
 
             {/* Mobile Hamburger Button */}
             <button
@@ -136,6 +137,13 @@ export function StickyHeader() {
                 {link.label}
               </Link>
             ))}
+            <Link
+              href="/emergency-sos"
+              onClick={() => setIsMobileNavOpen(false)}
+              className="px-4 py-2.5 rounded-lg font-mono text-xs uppercase tracking-wider text-[var(--danger-red)] bg-[var(--danger-red)]/15 font-bold border border-[var(--danger-red)]/30 flex items-center gap-2"
+            >
+              <AlertTriangle className="w-4 h-4" /> Emergency SOS
+            </Link>
           </div>
         )}
       </header>

@@ -6,6 +6,7 @@
  */
 
 import React from 'react';
+import { usePathname } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useSOSProtocol } from '@/hooks/useSOSProtocol';
 import { CountdownTimer } from './CountdownTimer';
@@ -16,6 +17,7 @@ import { GlowButton } from '@/components/ui/GlowButton';
 import { AlertOctagon, X, ArrowLeft, ShieldAlert } from 'lucide-react';
 
 export function SOSModal() {
+  const pathname = usePathname();
   const {
     isModalOpen,
     closeModal,
@@ -27,6 +29,9 @@ export function SOSModal() {
 
   const isCountingDown = sosState.status === 'COUNTDOWN';
   const isDispatched = sosState.status === 'DISPATCHED';
+
+  // Do not show modal overlay if user is already on the dedicated full-screen /emergency-sos page
+  if (pathname === '/emergency-sos') return null;
 
   return (
     <AnimatePresence>

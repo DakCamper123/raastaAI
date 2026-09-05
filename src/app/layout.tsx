@@ -4,6 +4,7 @@ import { ThemeProvider } from '@/context/ThemeContext';
 import { SimulationProvider } from '@/context/SimulationContext';
 import { SOSProvider } from '@/context/SOSContext';
 import { StickyHeader } from '@/components/layout/StickyHeader';
+import { SOSModal } from '@/components/emergency/SOSModal';
 
 export const metadata: Metadata = {
   title: 'Raasta.AI | Autonomous Path Planning for Unstructured Indian Roads',
@@ -37,6 +38,7 @@ export default function RootLayout({
           <SimulationProvider>
             <SOSProvider>
               <StickyHeader />
+              <SOSModal />
               <main id="main-content" className="flex-1 w-full flex flex-col">
                 {children}
               </main>

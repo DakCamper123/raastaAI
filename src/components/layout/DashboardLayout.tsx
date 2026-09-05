@@ -10,7 +10,6 @@ import { PanelGrid } from './PanelGrid';
 import { usePanelState, DrawerType } from '@/hooks/usePanelState';
 import { useResponsiveLayout } from '@/hooks/useResponsiveLayout';
 import { CollapsibleDrawer } from './CollapsibleDrawer';
-import { SOSModal } from '@/components/emergency/SOSModal';
 import { useSOSProtocol } from '@/hooks/useSOSProtocol';
 import { Activity, Radio, Sliders, Layers, AlertOctagon } from 'lucide-react';
 
@@ -114,9 +113,6 @@ export function DashboardLayout({
       >
         {feeds}
       </CollapsibleDrawer>
-
-      {/* Global In-Page Emergency SOS Modal */}
-      <SOSModal />
     </div>
   );
 }
