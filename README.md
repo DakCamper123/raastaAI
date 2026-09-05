@@ -9,39 +9,43 @@
 ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝
 ```
 
-# रास्ता.AI (Raasta.AI)
-### *Taming the Beautiful Chaos of Indian Corridors with Next-Gen Autonomy*
+# रास्ता.AI (Raasta.AI / BharatNav-AI)
+### *Next-Generation Autonomous Vehicle Simulation Platform Engineered for Unstructured Corridors*
 
-[![Autonomy Level: L4+](https://img.shields.io/badge/Autonomy-Level%204%2B%20Ready-00f0ff?style=for-the-badge&logo=ai&logoColor=black)](#)
-[![Safety Protocol](https://img.shields.io/badge/Safety-ISO%2026262%20ASIL--D-ff2a55?style=for-the-badge&logo=shield&logoColor=white)](#)
-[![V2X Latency](https://img.shields.io/badge/C--V2X%20Latency-%3C11.2ms%20%7C%205G%20NR-00ff88?style=for-the-badge&logo=5g&logoColor=black)](#)
-[![Sensor Suite](https://img.shields.io/badge/Sensor%20Fusion-360%C2%B0%20LiDAR%20%2B%208x%20CAM%20%2B%204D%20Radar-ffaa00?style=for-the-badge)](#)
-[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Next.js 14](https://img.shields.io/badge/Framework-Next.js%2014%20(App%20Router)-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
+[![React 18](https://img.shields.io/badge/React-18.3.1-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.6%20Strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS%20v3%20%2B%20CSS3%20Variables-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Three.js](https://img.shields.io/badge/3D%20HUD-Three.js%20r169-black?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
+[![KaTeX](https://img.shields.io/badge/Math%20Typesetting-KaTeX%200.16-319795?style=for-the-badge&logo=latex&logoColor=white)](https://katex.org/)
+[![Safety Standard](https://img.shields.io/badge/Safety-ISO%2026262%20ASIL--D-ff3355?style=for-the-badge&logo=shield&logoColor=white)](#)
+[![V2X Protocol](https://img.shields.io/badge/C--V2X%20Latency-%3C11.2ms%20%7C%205G%20NR-00ff88?style=for-the-badge&logo=5g&logoColor=black)](#)
 
 <p align="center">
-  <b>Autonomous path planning, 360° sensor fusion HUD, and fail-safe safety architecture engineered for the world's most challenging, dynamic, and unstructured driving environments.</b>
+  <b>A production-grade, zero-external-component-library autonomous mobility simulator built with custom CSS3/Tailwind styling, 60 Hz kinematic physics, dynamic Artificial Potential Fields (APF), Dynamic Window Approach (DWA), and biological obstacle pose tracking.</b>
 </p>
 
-[Explore Simulator](#-live-kinematic-simulator) • [Edge Scenarios](#-the-5-indian-road-edge-scenarios) • [Safety & SOS](#-emergency-sos--fail-safe-architecture) • [Research Team](#-core-engineering--research-team) • [Quickstart](#-quickstart)
+[Philosophy](#-the-raasta-philosophy) • [Interactive Cockpit](#-simulation-cockpit) • [Architecture](#-system-architecture) • [Math Engine](#-mathematical-engine) • [Edge Scenarios](#-5-indian-road-edge-scenarios) • [Emergency SOS](#-emergency-sos--fail-safe-architecture) • [Team](#-engineering--research-team) • [Quickstart](#-quickstart--local-development)
 
 </div>
 
 ---
 
-## 🧭 The Raasta Philosophy: Solving Autonomy Where It Counts
+## 🧭 The Raasta Philosophy: Autonomy Where It Counts
 
-> *"If an autonomous vehicle can master Old Delhi's Chandni Chowk, navigate a monsoon ghat in Kerala, and out-negotiate an unmarked rural highway merge—it can drive anywhere on Planet Earth."*
+> *"If an autonomous vehicle can master Old Delhi's Chandni Chowk, navigate a monsoon ghat in Kerala, and out-negotiate an unmarked rural highway merge — it can drive anywhere on Planet Earth."*
 
-Conventional Level 4 autonomous systems developed in Silicon Valley or Munich make clean assumptions:
-- Crisp, laser-painted lane markings.
-- Orderly, homogeneous vehicle fleets following right-of-way rules.
-- Predictable pedestrian behavior and isolated animal-free freeways.
+Conventional Level 4 autonomous driving systems developed in Silicon Valley or Munich depend heavily on idealized assumptions:
+- Laser-straight, freshly painted lane markers and reflective road signs.
+- Homogeneous, disciplined vehicular traffic adhering to strict right-of-way rules.
+- Predictable pedestrian flow and animal-free divided expressways.
 
-**India’s roads rewrite the playbook entirely.** 
+**Indian road corridors completely rewrite this rulebook:**
+1. **Virtual Lanes**: Roads expand and contract dynamically without lane paint. Centerlines are mentally inferred by human drivers.
+2. **Heterogeneous Traffic Mix**: Multi-axle freight trucks, three-wheeled auto-rickshaws, customized *jugaad* tractors, 100cc motorcycles, and non-motorized handcarts share identical asphalt.
+3. **Biological & Dynamic Road Hazards**: Stray cattle (*Bos indicus*) rest on warm asphalt, requiring empathetic, non-verbal micro-negotiation and wide-radius deceleration rather than aggressive honking.
 
-On Indian corridors, lanes are virtual suggestions, traffic is radically heterogeneous (from bullock carts and 100cc commuters to three-wheeled auto-rickshaws and multi-axle trucks), and unexpected biological hazards (such as stray cattle resting on the warm asphalt) require empathetic, non-verbal micro-negotiation.
-
-**Raasta.AI** is built ground-up to solve this reality: combining **Kinodynamic Artificial Potential Fields (APF)**, **Dynamic Window Approach (DWA)**, and biological pose-tracking neural networks to achieve safe, confident, and assertive autonomous mobility.
+**Raasta.AI** solves this real-world operational design domain (ODD) using a blended kinematic stack: **Kinodynamic Artificial Potential Fields (APF)**, **Dynamic Window Approach (DWA)**, and biological pose-tracking neural networks (**Bovine-PoseNet**).
 
 ---
 
@@ -50,7 +54,8 @@ On Indian corridors, lanes are virtual suggestions, traffic is radically heterog
 ```
  ┌────────────────┐  ┌────────────────┐  ┌────────────────┐  ┌────────────────┐
  │  360° 128-Beam │  │  8x 4K HDR Low-│  │  4D Ultra-Res  │  │  Dual RTK-GNSS │
- │     LiDAR      │  │  Latency Cams  │  │ Imaging Radar  │  │   + IMU 6-DOF  │
+ │  Solid-State   │  │  Latency Cams  │  │ Imaging Radar  │  │   + IMU 6-DOF  │
+ │     LiDAR      │  │  (360° Surround)│ │ (77-79 GHz)   │  │ (±1.4 cm RTK)  │
  └───────┬────────┘  └───────┬────────┘  └───────┬────────┘  └───────┬────────┘
          │                   │                   │                   │
          └─────────────────┐ │ ┌─────────────────┘                   │
@@ -91,76 +96,205 @@ On Indian corridors, lanes are virtual suggestions, traffic is radically heterog
 
 ## 🧮 Mathematical Engine
 
-Raasta.AI operates on a blended kinematic planning loop running at a continuous **60 Hz cycle frequency**:
+Raasta.AI combines dynamic artificial potential surfaces with localized velocity space search executing at a deterministic **60 Hz refresh rate**:
 
 ### 1. Artificial Potential Field (APF) Formulation
-The vehicle is driven by an attractive goal gradient while pushed away by hyper-localized obstacle repulsive fields:
+
+The vehicle state $q = [x, y]^T$ is driven by a superposition of an attractive goal potential and repulsive obstacle barriers:
 
 $$U_{total}(q) = U_{att}(q) + \sum_{i=1}^{N} U_{rep, i}(q)$$
 
-Where the attractive potential pulls the vehicle toward the corridor waypoint:
+#### Attractive Gradient
+Pulls the ego vehicle toward the forward corridor waypoint $q_{goal}$:
+
 $$U_{att}(q) = \frac{1}{2} k_{att} \cdot \|q - q_{goal}\|^2$$
 
-And the dynamic repulsive potential creates an exponentially steep safety barrier:
+#### Dynamic Repulsive Potential
+Creates an exponential safety barrier around dynamic obstacles, modulated by ego velocity $v_{ego}$:
+
 $$U_{rep}(q) = \begin{cases} 
 \frac{1}{2} k_{rep} \left( \frac{1}{\rho(q)} - \frac{1}{\rho_0} \right)^2 \left(\frac{v_{ego}}{v_{max}}\right) & \text{if } \rho(q) \le \rho_0 \\
 0 & \text{if } \rho(q) > \rho_0
 \end{cases}$$
 
+Where:
+- $\rho(q) = \|q - q_{obs}\|$ is the Euclidean distance to the nearest obstacle.
+- $\rho_0$ is the repulsive influence horizon (typically $6.0\text{ m}$ in urban creep, $18.0\text{ m}$ on expressways).
+- $k_{rep}$ is the obstacle stiffness gain.
+
 ### 2. Dynamic Window Approach (DWA) Objective Function
-Within the permissible acceleration envelope $(v, \omega) \in V_d$, the trajectory scoring objective optimizes heading alignment, clearance distance, and forward velocity:
+
+Within the kinematically admissible acceleration envelope $(v, \omega) \in V_d$, the trajectory search selects the pair maximizing:
 
 $$G(v, \omega) = \alpha \cdot \text{heading}(v, \omega) + \beta \cdot \text{dist}(v, \omega) + \gamma \cdot \text{velocity}(v, \omega)$$
 
+Where:
+- $\text{heading}(v, \omega)$ penalizes angular divergence from the target waypoint.
+- $\text{dist}(v, \omega)$ measures the clearance margin to the nearest obstacle along the forward arc rollout.
+- $\text{velocity}(v, \omega)$ incentives optimal traffic throughput.
+- $[\alpha, \beta, \gamma]$ are dynamically weighted based on traffic density and weather telemetry.
+
 ---
 
-## 🔬 The 5 Indian Road Edge Scenarios
+## 🔬 5 Indian Road Edge Scenarios
 
-The simulator features 5 interactive edge cases rigorously tested on Indian corridors:
-
-| # | Edge Scenario | Threat Profile | Autonomous Mitigation Strategy |
+| # | Edge Case | Threat Profile | Autonomous Mitigation Strategy |
 |:-:|:---|:---|:---|
-| **01** | **Unmarked Rural Road** | Potholes, unpaved muddy edges, no lane paint | Virtual centerline inference via road surface texture segmentation; shoulder slip angle damping. |
-| **02** | **Dense Market Swarm** | Pedestrians, handcarts, high-density two-wheelers | Sub-8 km/h tactile creep mode; pedestrian velocity vector forecasting and courteous micro-yielding. |
+| **01** | **Unmarked Rural Road** | Potholes, unpaved muddy shoulders, zero lane markings | Virtual centerline inference via road surface texture segmentation; shoulder slip angle damping. |
+| **02** | **Dense Market Swarm** | Dense pedestrians, handcarts, swarming two-wheelers | Sub-8 km/h tactile creep mode; pedestrian velocity vector forecasting and courteous micro-yielding. |
 | **03** | **Stray Cattle Crossing** | Unpredictable bovines standing/laying across lanes | **Bovine-PoseNet** biological keypoint tracking; wide-radius non-aggressive deceleration without horn panic. |
 | **04** | **Chaotic Urban Junction** | Multi-agent un-signaled bottleneck gridlock | Game-theoretic conflict arbitration; dynamic priority slot calculation and virtual gap slot-in. |
 | **05** | **High-Speed Highway Cut** | Aggressive lane-cutting buses, wrong-side tractors | 360° continuous 4D radar tracking; sub-40ms high-speed evasive lane lateral translation. |
+
+Each scenario is interactively selectable on the **Simulation Cockpit** (`/dashboard?scenario=01-05`) or browsable via the dedicated **Edge Cases Matrix** (`/scenarios`).
 
 ---
 
 ## 🚨 Emergency SOS & Fail-Safe Architecture
 
-Safety is non-negotiable. Raasta.AI implements an **ASIL-D aligned fail-safe intervention matrix**:
+Safety is engineered directly into the hardware and software layers:
 
-1. **In-Page Glassmorphic Safety Modal**:
-   - Triggers an instant vehicle hardware E-Brake in the simulator.
-   - Arms a **3-second safety countdown** with manual abort capability.
-   - Displays real-time RTK-GPS coordinates ($\pm 1.4\text{ cm}$ accuracy) on the NH-48 Pune-Bengaluru Corridor.
-   - Synthesizes vocal voice transmission via the **Web Speech API** and dual-frequency Web Audio acoustic siren.
-2. **Dedicated Standalone Emergency Route**:
-   - Available as a dedicated full-screen emergency interface at [`emergency-sos.html`](emergency-sos.html) or as a Next.js/Tailwind/Framer Motion component at [`src/app/emergency-sos/page.tsx`](src/app/emergency-sos/page.tsx).
-3. **C-V2X Emergency Packet**:
-   - Formatted for 3GPP Release 17 ultra-reliable low-latency communications (URLLC) over 5G NR Band n78.
+1. **Dedicated Full-Screen Route (`/emergency-sos`)**:
+   - Deep red pulsating HUD (`#ff3355`) with high-visibility emergency styling.
+   - Large central hardware E-Stop activation switch.
+   - **3-second circular SVG abort countdown** with manual override.
+   - Live **RTK-GNSS coordinate readout** ($\pm 1.4\text{ cm}$ accuracy) for the NH-48 Pune-Bengaluru Corridor (`18.5204° N, 73.8567° E`).
+   - Integrated **Web Speech API** synthesized voice transmission: *"Emergency stop initiated. All systems halting."*
+   - Dual-frequency **Web Audio API** siren synthesizer ($800\text{ Hz} \leftrightarrow 1200\text{ Hz}$ alternating sweep).
+   - Real-time **5G NR C-V2X URLLC packet stream** log over Band n78.
+2. **Global Fail-Safe Overlay (`Ctrl + Shift + E`)**:
+   - Accessible from any screen via keyboard shortcut or header button.
+   - Immediately clamps the virtual vehicle brakes and opens the glassmorphic safety modal.
 
 ---
 
 ## 🎨 Dual Cockpit Design System
 
-Built with zero external CSS frameworks in pure, ultra-optimized CSS3:
+Constructed with **zero external UI component libraries** using pure CSS3 custom properties and Tailwind utilities:
 
-- **Obsidian Cyber-HUD (Default Dark)**:
-  - Deep space palette (`#06090e`, `#0a0f18`) with cyber-cyan (`#00f0ff`) and warning-amber (`#ffaa00`) laser-sharp HUD accents.
-  - Engineered for night-time driver HUD transparency and minimal cockpit glare.
-- **Titanium Lab Telemetry (Light Mode)**:
-  - Crisp high-contrast clean room palette (`#f4f6fa`, `#ffffff`) with deep cobalt and slate accents.
-  - Optimized for daytime test-track diagnostics, field validation, and telemetry auditing.
-- Toggle between modes seamlessly using the `☀️ / 🌙` switch in the navigation header.
+### 🌑 Theme A — "Obsidian Cyber-HUD" (Default Dark)
+- Designed for night-time driver HUD transparency with zero glare.
+- `--bg-primary: #06090e`, `--bg-secondary: #0a0f18`, `--surface-glass: rgba(10, 15, 24, 0.72)`.
+- Laser cyber-cyan (`#00f0ff`) and warning-amber (`#ffaa00`) HUD accents.
+
+### ☀️ Theme B — "Titanium Lab Telemetry" (Light Mode)
+- Designed for daytime test-track diagnostics, field validation, and telemetry auditing.
+- `--bg-primary: #f4f6fa`, `--bg-secondary: #ffffff`, `--surface-glass: rgba(255, 255, 255, 0.82)`.
+- Deep cobalt (`#0077cc`) and amber-gold (`#d97706`) accents.
+
+Toggle seamlessly using the `☀️ / 🌙` switch in the navigation bar. Theme preference is automatically persisted across browser sessions via `localStorage`.
 
 ---
 
-## 👥 Core Engineering & Research Team
+## 📁 Complete Project Structure
 
-| Member | Role | Specialized Focus Area |
+```
+src/
+├── app/
+│   ├── layout.tsx                      ← Root layout with Theme, Simulation, SOS providers & global SOSModal
+│   ├── page.tsx                        ← Cinematic hero landing with Three.js particle field & tagline
+│   ├── globals.css                     ← Dual-cockpit CSS custom variables & KaTeX typography
+│   ├── dashboard/
+│   │   └── page.tsx                    ← Main 60 Hz simulation cockpit with ?scenario= query loader
+│   ├── architecture/
+│   │   └── page.tsx                    ← 6-stage animated system flow diagram & KaTeX formula explainer
+│   ├── scenarios/
+│   │   └── page.tsx                    ← 5 Indian road edge cases comparison table & masonry cards
+│   ├── emergency-sos/
+│   │   └── page.tsx                    ← Dedicated full-screen ASIL-D emergency fail-safe route
+│   └── team/
+│       └── page.tsx                    ← Core engineering team roster
+├── components/
+│   ├── layout/
+│   │   ├── DashboardLayout.tsx         ← Responsive 4-column desktop / tablet / mobile layout shell
+│   │   ├── PanelGrid.tsx               ← CSS Grid orchestrator with compact floating feeds overlay
+│   │   ├── CollapsibleDrawer.tsx       ← Focus-trapped mobile/tablet bottom drawers
+│   │   ├── StickyHeader.tsx            ← Navigation header with live CAN-bus marquee & theme toggle
+│   │   └── ScrollableSidebar.tsx       ← Safe overflow scenario list & system health sidebar
+│   ├── hero/
+│   │   ├── PhilosophyHero.tsx          ← Full-bleed cinematic landing hero
+│   │   ├── AnimatedTagline.tsx         ← Deterministic word-by-word typewriter effect (80ms/word)
+│   │   └── RoadParticleField.tsx       ← Three.js perspective road particles canvas
+│   ├── architecture/
+│   │   ├── SystemFlowDiagram.tsx       ← Animated SVG converging signal pipeline
+│   │   ├── SensorNode.tsx              ← Individual sensor suite specification card
+│   │   ├── FusionEngineBlock.tsx       ← BEVFormer & dynamic occupancy grid block
+│   │   ├── PredictionPipeline.tsx      ← Bovine-PoseNet & TTC trajectory block
+│   │   ├── MotionControllerBlock.tsx   ← APF repulsive surface & DWA velocity block
+│   │   └── FailSafeCoreBlock.tsx       ← ASIL-D drive-by-wire E-Brake block
+│   ├── math/
+│   │   ├── APFFormulaRenderer.tsx      ← KaTeX APF formulas with real-time interactive canvas heatmap
+│   │   ├── DWAObjectiveRenderer.tsx    ← KaTeX DWA scoring formulas with interactive sliders
+│   │   └── MathExplainer.tsx           ← Comprehensive mathematical documentation
+│   ├── simulation/
+│   │   ├── SimulationCanvas.tsx        ← Auto-resizing 60 Hz 2D canvas with APF contours
+│   │   ├── VehicleSprite.tsx           ← Ego vehicle sprite renderer with steering orientation
+│   │   ├── ObstacleLayer.tsx           ← Dynamic cattle, rickshaw, pedestrian, and truck obstacles
+│   │   └── TrajectoryOverlay.tsx       ← DWA lookahead trajectory rollout visualization
+│   ├── feeds/
+│   │   ├── SensorFeeds.tsx             ← Compact 2x2 perception feed grid
+│   │   ├── LiDARPointCloud.tsx         ← 128-beam 360° point cloud with polar radar sweep
+│   │   └── CameraFeedCard.tsx          ← Compact 4K/fisheye feed cards with micro HUD telemetry
+│   ├── metrics/
+│   │   ├── LiveMetrics.tsx             ← Real-time telemetry dashboard cards
+│   │   ├── SpeedGauge.tsx              ← SVG radial speedometer with dynamic needle
+│   │   ├── TTCIndicator.tsx            ← Color-coded Time-To-Collision bar
+│   │   └── OccupancyGridMini.tsx       ← 60 Hz miniature dynamic occupancy thumbnail
+│   ├── controls/
+│   │   ├── ControlPanel.tsx            ← Play, pause, reset, and manual e-brake controls
+│   │   ├── ScenarioSelector.tsx        ← Scenario edge case selector
+│   │   └── SpeedSlider.tsx             ← 0.25x to 4.0x simulation speed slider
+│   ├── scenarios/
+│   │   ├── ScenarioCard.tsx            ← Edge scenario card with severity badge & deep link
+│   │   ├── ScenarioTable.tsx           ← Comprehensive scenario comparison matrix
+│   │   └── ScenarioSimulator.tsx       ← In-card mini-simulator launcher
+│   ├── emergency/
+│   │   ├── SOSModal.tsx                ← Glassmorphic emergency modal overlay
+│   │   ├── CountdownTimer.tsx          ← 3-second circular SVG countdown timer
+│   │   ├── GPSCoordinateDisplay.tsx    ← RTK-GPS ±1.4cm precision coordinates
+│   │   ├── VoiceSiren.tsx              ← Web Speech voice synthesis + dual-tone audio siren
+│   │   └── CV2XPacketLog.tsx           ← 5G NR Band n78 C-V2X URLLC packet stream
+│   ├── team/
+│   │   ├── TeamGrid.tsx                ← Responsive 3-column team grid
+│   │   └── MemberCard.tsx              ← Glassmorphic team profile card with avatar initials
+│   └── ui/
+│       ├── ThemeToggle.tsx             ← Obsidian Cyber-HUD / Titanium Lab switch
+│       ├── GlassCard.tsx               ← Reusable glassmorphic surface card
+│       ├── GlowButton.tsx              ← Cyber-glow neon action button
+│       ├── SectionHeading.tsx          ← Animated section heading with badge
+│       └── ScrollReveal.tsx            ← Intersection Observer entry animation wrapper
+├── context/
+│   ├── ThemeContext.tsx                ← Dual-cockpit theme state manager
+│   ├── SimulationContext.tsx           ← 60 Hz simulation lifecycle and obstacle state
+│   └── SOSContext.tsx                  ← ASIL-D emergency fail-safe state machine & audio engine
+├── hooks/
+│   ├── useResponsiveLayout.ts          ← MatchMedia breakpoint and orientation detector
+│   ├── usePanelState.ts                ← Mobile/tablet drawer orchestration
+│   ├── useTheme.ts                     ← Theme consumer hook
+│   ├── useSimulationLoop.ts            ← 60 Hz requestAnimationFrame physics loop
+│   ├── useSOSProtocol.ts               ← Emergency protocol & e-brake binding
+│   └── useSensorData.ts                ← Real-time noisy telemetry stream
+├── data/
+│   ├── scenarios.ts                    ← 5 edge case definitions & obstacle configurations
+│   ├── team.ts                         ← 6 core engineering profiles
+│   ├── sensors.ts                      ← Sensor specifications & optical feed metadata
+│   └── telemetry.ts                    ← CAN-bus noise & 5G C-V2X packet generator
+├── lib/
+│   ├── apf-engine.ts                   ← Artificial Potential Fields calculation engine
+│   ├── dwa-planner.ts                  ← Dynamic Window Approach velocity search & trajectory rollout
+│   ├── kinematics.ts                   ← Non-linear kinematic bicycle vehicle model
+│   └── constants.ts                    ← Vehicle dimensions, physics limits, and GPS coordinates
+└── types/
+    ├── simulation.ts                   ← SimState, EgoVehicle, Obstacle, Scenario interfaces
+    ├── sensors.ts                      ← SensorSpecification, CameraFeedInfo, PointCloud types
+    └── emergency.ts                    ← SOSState, CV2XEmergencyPacket, GPSPosition types
+```
+
+---
+
+## 👥 Engineering & Research Team
+
+| Member | Role | Focus & Core Contributions |
 | :--- | :--- | :--- |
 | **Prateek** | `Team Lead` | System Architecture & Hardware-in-the-Loop Integration |
 | **Swasteek** | `Backend Eng.` | Data Pipeline, Control Logic & Deterministic Stateflow |
@@ -171,49 +305,36 @@ Built with zero external CSS frameworks in pure, ultra-optimized CSS3:
 
 ---
 
-## 🚀 Multi-Page Next.js 14 Application Structure
-
-Raasta.AI is built as a production-grade **Next.js 14 App Router** application with pure CSS3/Tailwind styling, Framer Motion animations, Three.js 3D particles, and KaTeX mathematical formula rendering:
-
-| Route | View Description | Core Interactive Features |
-|:---|:---|:---|
-| `/` | **Landing / Philosophy Hero** | Three.js perspective road particles, 80ms word typewriter tagline, SV vs India comparison, innovation cards. |
-| `/dashboard` | **Simulation Cockpit** | Responsive 4-column cockpit, 60 Hz kinematic APF/DWA canvas, live Recharts/SVG telemetry, scenario picker. |
-| `/architecture` | **System Flow & Math Engine** | 6-stage animated sensor fusion pipeline diagram + KaTeX mathematical breakdown with interactive sliders. |
-| `/scenarios` | **5 Indian Road Edge Cases** | Comprehensive matrix comparison table, threat severity badges, deep-linking simulator launchers. |
-| `/emergency-sos` | **Full-Screen ASIL-D Fail-Safe** | 3-second abort ring, RTK-GPS NH-48 readout, Web Speech synthesizer, Web Audio siren, 5G NR C-V2X log. |
-| `/team` | **Core Engineering Team** | Hexagonal/glassmorphic profile cards with stagger reveal animations and role badges. |
-
----
-
 ## 💻 Quickstart & Local Development
 
 ### Prerequisites
-- Node.js 18+ or 20+
-- npm 9+
+- **Node.js**: v18.17.0+ or v20.0.0+
+- **npm**: v9.0.0+
 
-### Installation & Run
+### Installation
 ```bash
-# 1. Clone the repository
+# 1. Clone the official repository
 git clone https://github.com/DakCamper123/raastaAI.git
 cd raastaAI
 
 # 2. Install dependencies
 npm install
-
-# 3. Start local development server (Turbopack / Next.js)
-npm run dev
-
-# 4. Open in your browser
-http://localhost:3000
 ```
+
+### Launching the Development Server
+```bash
+# Start Next.js local development server (bound to 0.0.0.0:3000)
+npm run dev
+```
+Open your browser and navigate to:
+👉 **`http://localhost:3000`**
 
 ### Production Build
 ```bash
-# Build the optimized production bundle
+# Compile and optimize static pages
 npm run build
 
-# Start production server
+# Launch the production server
 npm run start
 ```
 
@@ -221,7 +342,7 @@ npm run start
 
 ## 📄 License
 
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for more information.
+Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for complete terms.
 
 <div align="center">
   <sub>Engineered with precision for the future of Indian autonomous mobility.</sub><br>
