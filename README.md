@@ -10,22 +10,24 @@
 ```
 
 # रास्ता.AI (Raasta.AI / BharatNav-AI)
-### *Next-Generation Autonomous Vehicle Simulation Platform Engineered for Unstructured Corridors*
+### *Next-Generation Autonomous Vehicle Simulation & Telematics Platform Engineered for Unstructured Corridors*
 
 [![Next.js 14](https://img.shields.io/badge/Framework-Next.js%2014%20(App%20Router)-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
 [![React 18](https://img.shields.io/badge/React-18.3.1-61dafb?style=for-the-badge&logo=react&logoColor=black)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.6%20Strict-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Supabase Auth](https://img.shields.io/badge/Auth-Supabase%20Free%20Email-3ecf8e?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+[![Supabase Storage](https://img.shields.io/badge/Storage-Supabase%20Storage%20(PDFs)-3ecf8e?style=for-the-badge&logo=supabase&logoColor=white)](https://supabase.com/)
+[![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL%20RLS-4169e1?style=for-the-badge&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
 [![Tailwind CSS](https://img.shields.io/badge/Styling-Tailwind%20CSS%20v3%20%2B%20CSS3%20Variables-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
 [![Three.js](https://img.shields.io/badge/3D%20HUD-Three.js%20r169-black?style=for-the-badge&logo=threedotjs&logoColor=white)](https://threejs.org/)
-[![KaTeX](https://img.shields.io/badge/Math%20Typesetting-KaTeX%200.16-319795?style=for-the-badge&logo=latex&logoColor=white)](https://katex.org/)
 [![Safety Standard](https://img.shields.io/badge/Safety-ISO%2026262%20ASIL--D-ff3355?style=for-the-badge&logo=shield&logoColor=white)](#)
 [![V2X Protocol](https://img.shields.io/badge/C--V2X%20Latency-%3C11.2ms%20%7C%205G%20NR-00ff88?style=for-the-badge&logo=5g&logoColor=black)](#)
 
 <p align="center">
-  <b>A production-grade, zero-external-component-library autonomous mobility simulator built with custom CSS3/Tailwind styling, 60 Hz kinematic physics, dynamic Artificial Potential Fields (APF), Dynamic Window Approach (DWA), and biological obstacle pose tracking.</b>
+  <b>A production-grade, zero-external-UI-library autonomous mobility simulator and diagnostic telemetry platform featuring 60 Hz kinematic physics, dynamic Artificial Potential Fields (APF), Dynamic Window Approach (DWA), dedicated Car Analysis Center, Supabase email authentication, cloud PDF storage, and full persistence.</b>
 </p>
 
-[Philosophy](#-the-raasta-philosophy) • [Interactive Cockpit](#-simulation-cockpit) • [Architecture](#-system-architecture) • [Math Engine](#-mathematical-engine) • [Edge Scenarios](#-5-indian-road-edge-scenarios) • [Emergency SOS](#-emergency-sos--fail-safe-architecture) • [Team](#-engineering--research-team) • [Quickstart](#-quickstart--local-development)
+[Philosophy](#-the-raasta-philosophy) • [Car Analysis & Diagnostics](#-car-condition--analysis-center) • [Email Auth & Gated Access](#-free-email-authentication--gated-access) • [Cloud & Local Persistence](#-cloud--local-persistence-architecture) • [Simulation Cockpit](#-simulation-cockpit) • [Architecture](#-system-architecture) • [Mathematical Engine](#-mathematical-engine) • [Edge Scenarios](#-5-indian-road-edge-scenarios) • [Emergency SOS](#-emergency-sos--fail-safe-architecture) • [Team](#-engineering--research-team) • [Quickstart](#-quickstart--local-development)
 
 </div>
 
@@ -46,6 +48,122 @@ Conventional Level 4 autonomous driving systems developed in Silicon Valley or M
 3. **Biological & Dynamic Road Hazards**: Stray cattle (*Bos indicus*) rest on warm asphalt, requiring empathetic, non-verbal micro-negotiation and wide-radius deceleration rather than aggressive honking.
 
 **Raasta.AI** solves this real-world operational design domain (ODD) using a blended kinematic stack: **Kinodynamic Artificial Potential Fields (APF)**, **Dynamic Window Approach (DWA)**, and biological pose-tracking neural networks (**Bovine-PoseNet**).
+
+---
+
+## 🚗 Car Condition & Analysis Center (`/analysis`)
+
+Raasta.AI features a dedicated **Vehicle Condition & Telemetry Analysis Center** accessible from the primary navigation. It provides an engineering diagnostic dossier for the autonomous vehicle platform (VIN: `IND-MH12-AUTON-2026-X77`):
+
+### Comprehensive Diagnostic Subsystems
+- **Overall Health Index**: `98% NOMINAL EXCELLENT` with ISO 26262 ASIL-D certification alignment.
+- **High-Voltage Powertrain & Battery Condition**:
+  - State of Charge (SoC): `78.4%` (visual gradient meter)
+  - State of Health (SoH): `98.2%`
+  - Pack Voltage: `394.2 V` | Current Draw: `42.6 A`
+  - Cell Voltage Delta: `±0.008 V` (perfectly balanced cells)
+  - Average Pack Temperature: `28.4 °C` with active liquid glycol cooling loop (`3.2 L/min`)
+  - Estimated Operating Range: `284 km` remaining
+- **ASIL-D Redundant Deceleration & Brake-by-Wire**:
+  - Dual hydraulic line pressure monitors: Primary `142.5 bar` | Secondary fail-safe `142.1 bar`
+  - Brake pad wear life gauges: Front axle `93.8%` | Rear axle `95.2%`
+  - Hardware intervention reaction latency: `11.2 ms` (sub-12ms hardware target)
+  - ASIL-D E-Brake redundancy: `ARMED & ACTIVE (DUAL RING)`
+- **Chassis Dynamics, Road Traction & 4-Wheel Monitoring**:
+  - Road friction coefficient: $\mu = 0.82$ (Dry bitumen & aggregate)
+  - 4-Tire pressure telematics: FL `33.2 psi`, FR `33.1 psi`, RL `35.0 psi`, RR `35.1 psi`
+  - Wheel slip ratio: `1.4%` (traction control nominal)
+  - Electric Power Steering (EPS) torque feedback: `3.4 Nm`
+- **Perception Sensor Suite Calibration Matrix**:
+  - 128-Beam Solid-State LiDAR: `1.42M pts/sec` | `98.2%` optical window transparency
+  - 8x Surround HDR Cameras: `94.6% MTF` sharpness | `60 FPS`
+  - 4D Imaging Radar: `28.4 dB SNR` | 512 virtual Doppler channels
+  - Dual-Band RTK GNSS: `±1.4 cm` precision | `26` satellite carrier-phase lock
+- **ISO 14229 / UDS On-Board Diagnostics**:
+  - Diagnostic Trouble Codes (DTCs): `0 ACTIVE FAULTS`
+  - CAN-FD Bus Load: `46.8%` | Automotive Ethernet (1000BASE-T1): `240 Mbps`
+
+---
+
+## 📥 Multi-Format Exporter & Automotive PDF Generator
+
+Users can export full vehicle diagnostics and telematics in three engineering formats:
+1. **Automotive Engineering PDF Dossier (`Print / Save PDF`)**:
+   - Built using client-side `jspdf` integration.
+   - Generates a styled, multi-section automotive engineering report featuring VIN, timestamps, powertrain, brakes, chassis, sensors, and OBD-II diagnostics.
+   - Automatically uploaded to **Supabase Storage** and downloaded to the user's local device.
+2. **CAN-Bus Telemetry JSON Snapshot (`Export JSON`)**:
+   - Complete structured JSON payload containing all subsystem metrics, sensor specifications, and operating parameters.
+3. **Timeseries Dynamics Log (`Export CSV`)**:
+   - High-frequency tabular dataset logging timestamps, speed ($km/h$), steering angle ($^\circ$), lateral acceleration ($m/s^2$), battery SoC, hydraulic line pressure, friction $\mu$, and RTK precision.
+
+---
+
+## 🔐 Free Email Authentication & Gated Access
+
+Raasta.AI integrates free, persistent email authentication powered by **Supabase Auth**:
+
+- **100% Free Access**: Users can create a free account or sign in with their email and password.
+- **Cyber-HUD Auth Modal (`AuthModal.tsx`)**:
+  - Glassmorphic Obsidian interface with tab toggling between **Sign In** and **Sign Up Free**.
+  - Form validation, password visibility toggling, error alerts, and email confirmation workflows.
+- **Header Auth Pill (`StickyHeader.tsx`)**:
+  - Displays a **Sign In** button when unauthenticated.
+  - Displays a **User Account Badge (`Full Telematics Unlocked`)** with email and a one-click **Sign Out** menu when authenticated.
+- **Intelligent Gating**:
+  - **Perception Feeds ([SensorFeeds.tsx](file:///c:/Users/Krris/.antigravity-ide/src/components/feeds/SensorFeeds.tsx))**: Feeds are protected behind an obsidian lock overlay. Clicking "Unlock Feeds (Free)" prompts the Auth Modal.
+  - **Control Settings ([ControlPanel.tsx](file:///c:/Users/Krris/.antigravity-ide/src/components/controls/ControlPanel.tsx))**: APF planner parameter tuning sliders (`k_att`, `k_rep`) are locked for unauthenticated users.
+  - **Car Condition & Downloads ([analysis/page.tsx](file:///c:/Users/Krris/.antigravity-ide/src/app/analysis/page.tsx))**: Attempting to download reports or inspect high-frequency CAN streams prompts the user to sign in or create a free account.
+  - Once authenticated, all locks lift immediately!
+
+---
+
+## 💾 Cloud & Local Persistence Architecture
+
+All user data, historical snapshots, diagnostic PDFs, and settings persist across devices and reloads:
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│                        RAASTA.AI PERSISTENCE LAYER                     │
+└────────────────────────────────────────────────────────────────────────┘
+                    │                                    │
+                    ▼                                    ▼
+       ┌────────────────────────┐           ┌────────────────────────┐
+       │   SUPABASE POSTGRESQL  │           │    SUPABASE STORAGE    │
+       │                        │           │                        │
+       │ • vehicle_analysis_    │           │ • Bucket:              │
+       │   history (RLS)        │           │   analysis_reports     │
+       │ • user_settings (RLS)  │           │ • Uploads generated    │
+       │ • Full CAN/Sensor stats│           │   diagnostic PDFs      │
+       └────────────────────────┘           └────────────────────────┘
+                    ▲                                    ▲
+                    │                                    │
+                    └─────────────────┬──────────────────┘
+                                      │ (Hybrid Sync & Offline Cache)
+                                      ▼
+                         ┌────────────────────────┐
+                         │   BROWSER LOCALSTORAGE │
+                         │                        │
+                         │ • raasta_analysis_hist │
+                         │ • raasta_user_settings │
+                         └────────────────────────┘
+```
+
+### PostgreSQL Tables & Storage Buckets
+1. **`public.vehicle_analysis_history`**:
+   - `id UUID PRIMARY KEY`, `user_id UUID REFERENCES auth.users(id)`
+   - `title`, `health_index`, `battery_soc`, `battery_temp`, `brake_pressure`, `friction_mu`
+   - `telemetry_stats JSONB`, `feed_stats JSONB`, `diagnostics_payload JSONB`
+   - `pdf_url TEXT`, `report_html TEXT`
+   - Row Level Security (RLS) policies scoped to `auth.uid() = user_id`.
+2. **`public.user_settings`**:
+   - `user_id UUID PRIMARY KEY`, `k_att NUMERIC`, `k_rep NUMERIC`, `speed_warp NUMERIC`
+   - Automatically loads tuned APF parameters on startup/login and auto-saves adjustments.
+3. **Supabase Storage Bucket (`analysis_reports`)**:
+   - Stores real `.pdf` files generated during report downloads.
+   - Allows users to re-download their exact historical PDFs anytime from the **Previous Vehicle Analysis History** table.
+4. **Historical Snapshot Inspector**:
+   - Clicking **"Inspect"** on any past record dynamically populates all cockpit gauges with that historical snapshot, enabling before-and-after comparison with an alert banner and **"Return to Live Vehicle Stream"** button.
 
 ---
 
@@ -98,196 +216,108 @@ Conventional Level 4 autonomous driving systems developed in Silicon Valley or M
 
 Raasta.AI combines dynamic artificial potential surfaces with localized velocity space search executing at a deterministic **60 Hz refresh rate**:
 
-### 1. Artificial Potential Field (APF) Formulation
+### 1. Artificial Potential Fields (APF)
+The net virtual force vector driving the autonomous vehicle is given by:
 
-The vehicle state $q = [x, y]^T$ is driven by a superposition of an attractive goal potential and repulsive obstacle barriers:
+$$\vec{F}_{\text{total}}(q) = \vec{F}_{\text{att}}(q) + \sum_{i=1}^{N} \vec{F}_{\text{rep}, i}(q)$$
 
-$$U_{total}(q) = U_{att}(q) + \sum_{i=1}^{N} U_{rep, i}(q)$$
+- **Attractive Potential Force**: Pulls ego vehicle toward the distant corridor waypoint:
+  $$\vec{F}_{\text{att}}(q) = -k_{\text{att}} \cdot (q - q_{\text{goal}})$$
 
-#### Attractive Gradient
-Pulls the ego vehicle toward the forward corridor waypoint $q_{goal}$:
+- **Kinodynamic Velocity-Dependent Repulsive Force**: Scaled dynamically by the obstacle's approaching velocity vector:
+  $$U_{\text{rep}, i}(q) = \begin{cases} \frac{1}{2} k_{\text{rep}} \left(\frac{1}{\rho_i(q)} - \frac{1}{\rho_0}\right)^2 \cdot \left(1 + \frac{v_{\text{rel}, i}}{v_{\max}}\right), & \text{if } \rho_i(q) \le \rho_0 \\ 0, & \text{if } \rho_i(q) > \rho_0 \end{cases}$$
 
-$$U_{att}(q) = \frac{1}{2} k_{att} \cdot \|q - q_{goal}\|^2$$
+### 2. Dynamic Window Approach (DWA)
+Feasible velocity tuples $(v, \omega)$ are sampled within the reachable hardware envelope:
 
-#### Dynamic Repulsive Potential
-Creates an exponential safety barrier around dynamic obstacles, modulated by ego velocity $v_{ego}$:
+$$V_d = \left\{(v, \omega) \;\middle|\; v \in [v - a_{\max} \Delta t,\, v + a_{\max} \Delta t] \cap [0, v_{\max}],\; \omega \in [\omega - \dot{\omega}_{\max} \Delta t,\, \omega + \dot{\omega}_{\max} \Delta t] \cap [-\omega_{\max}, \omega_{\max}]\right\}$$
 
-$$U_{rep}(q) = \begin{cases} 
-\frac{1}{2} k_{rep} \left( \frac{1}{\rho(q)} - \frac{1}{\rho_0} \right)^2 \left(\frac{v_{ego}}{v_{max}}\right) & \text{if } \rho(q) \le \rho_0 \\
-0 & \text{if } \rho(q) > \rho_0
-\end{cases}$$
-
-Where:
-- $\rho(q) = \|q - q_{obs}\|$ is the Euclidean distance to the nearest obstacle.
-- $\rho_0$ is the repulsive influence horizon (typically $6.0\text{ m}$ in urban creep, $18.0\text{ m}$ on expressways).
-- $k_{rep}$ is the obstacle stiffness gain.
-
-### 2. Dynamic Window Approach (DWA) Objective Function
-
-Within the kinematically admissible acceleration envelope $(v, \omega) \in V_d$, the trajectory search selects the pair maximizing:
+Trajectories are optimized via objective function:
 
 $$G(v, \omega) = \alpha \cdot \text{heading}(v, \omega) + \beta \cdot \text{dist}(v, \omega) + \gamma \cdot \text{velocity}(v, \omega)$$
 
-Where:
-- $\text{heading}(v, \omega)$ penalizes angular divergence from the target waypoint.
-- $\text{dist}(v, \omega)$ measures the clearance margin to the nearest obstacle along the forward arc rollout.
-- $\text{velocity}(v, \omega)$ incentives optimal traffic throughput.
-- $[\alpha, \beta, \gamma]$ are dynamically weighted based on traffic density and weather telemetry.
+---
+
+## 🚦 5 Indian Road Edge Scenarios
+
+| Code | Corridor | Hazard Profile | Algorithmic Mitigation |
+| :--- | :--- | :--- | :--- |
+| **`01`** | **NH-48 Divided Highway** | Stray cattle (*Bos indicus*) resting in center lane | Bovine-PoseNet posture inference; wide-margin tangential APF repulsion |
+| **`02`** | **Chandni Chowk Market** | Three-wheeled autorickshaw cutting across trajectory | Game-theoretic gap estimation + localized DWA velocity braking |
+| **`03`** | **Pune Monsoon Corridor** | Waterlogged ditch + low-visibility monsoon rain | 4D Imaging Radar penetration + adaptive tire friction coefficient $\mu$ |
+| **`04`** | **Western Ghats Hairpin** | Blind hairpin curve with oncoming truck in lane | Predictive trajectory rollout + 5G NR C-V2X blind spot notification |
+| **`05`** | **Unmarked Rural Road** | Severe potholes, muddy unpaved road edges | Virtual road boundary inference + APF ditch barrier clamping |
 
 ---
 
-## 🔬 5 Indian Road Edge Scenarios
+## 🆘 Emergency SOS & Fail-Safe Architecture
 
-| # | Edge Case | Threat Profile | Autonomous Mitigation Strategy |
-|:-:|:---|:---|:---|
-| **01** | **Unmarked Rural Road** | Potholes, unpaved muddy shoulders, zero lane markings | Virtual centerline inference via road surface texture segmentation; shoulder slip angle damping. |
-| **02** | **Dense Market Swarm** | Dense pedestrians, handcarts, swarming two-wheelers | Sub-8 km/h tactile creep mode; pedestrian velocity vector forecasting and courteous micro-yielding. |
-| **03** | **Stray Cattle Crossing** | Unpredictable bovines standing/laying across lanes | **Bovine-PoseNet** biological keypoint tracking; wide-radius non-aggressive deceleration without horn panic. |
-| **04** | **Chaotic Urban Junction** | Multi-agent un-signaled bottleneck gridlock | Game-theoretic conflict arbitration; dynamic priority slot calculation and virtual gap slot-in. |
-| **05** | **High-Speed Highway Cut** | Aggressive lane-cutting buses, wrong-side tractors | 360° continuous 4D radar tracking; sub-40ms high-speed evasive lane lateral translation. |
-
-Each scenario is interactively selectable on the **Simulation Cockpit** (`/dashboard?scenario=01-05`) or browsable via the dedicated **Edge Cases Matrix** (`/scenarios`).
+- **ASIL-D E-Brake Hardware Loop**: Deceleration clamped to $-8.5\text{ m/s}^2$ with redundant dual-channel pressure lines (`142 bar`).
+- **3-Second Circular SVG Countdown**: Abortable intervention timer with keyboard shortcut (`Ctrl+Shift+E`).
+- **3GPP Release 17 C-V2X URLLC Broadcast**: High-priority safety packet emitted over 5G NR Band n78 ($3.5\text{ GHz}$) with sub-$11.2\text{ ms}$ latency.
+- **Dual-Tone Acoustic Siren**: Synthetic Web Audio API oscillator ($800\text{ Hz} \leftrightarrow 1200\text{ Hz}$) paired with multilingual voice synthesis.
 
 ---
 
-## 🚨 Emergency SOS & Fail-Safe Architecture
-
-Safety is engineered directly into the hardware and software layers:
-
-1. **Dedicated Full-Screen Route (`/emergency-sos`)**:
-   - Deep red pulsating HUD (`#ff3355`) with high-visibility emergency styling.
-   - Large central hardware E-Stop activation switch.
-   - **3-second circular SVG abort countdown** with manual override.
-   - Live **RTK-GNSS coordinate readout** ($\pm 1.4\text{ cm}$ accuracy) for the NH-48 Pune-Bengaluru Corridor (`18.5204° N, 73.8567° E`).
-   - Integrated **Web Speech API** synthesized voice transmission: *"Emergency stop initiated. All systems halting."*
-   - Dual-frequency **Web Audio API** siren synthesizer ($800\text{ Hz} \leftrightarrow 1200\text{ Hz}$ alternating sweep).
-   - Real-time **5G NR C-V2X URLLC packet stream** log over Band n78.
-2. **Global Fail-Safe Overlay (`Ctrl + Shift + E`)**:
-   - Accessible from any screen via keyboard shortcut or header button.
-   - Immediately clamps the virtual vehicle brakes and opens the glassmorphic safety modal.
-
----
-
-## 🎨 Dual Cockpit Design System
-
-Constructed with **zero external UI component libraries** using pure CSS3 custom properties and Tailwind utilities:
-
-### 🌑 Theme A — "Obsidian Cyber-HUD" (Default Dark)
-- Designed for night-time driver HUD transparency with zero glare.
-- `--bg-primary: #06090e`, `--bg-secondary: #0a0f18`, `--surface-glass: rgba(10, 15, 24, 0.72)`.
-- Laser cyber-cyan (`#00f0ff`) and warning-amber (`#ffaa00`) HUD accents.
-
-### ☀️ Theme B — "Titanium Lab Telemetry" (Light Mode)
-- Designed for daytime test-track diagnostics, field validation, and telemetry auditing.
-- `--bg-primary: #f4f6fa`, `--bg-secondary: #ffffff`, `--surface-glass: rgba(255, 255, 255, 0.82)`.
-- Deep cobalt (`#0077cc`) and amber-gold (`#d97706`) accents.
-
-Toggle seamlessly using the `☀️ / 🌙` switch in the navigation bar. Theme preference is automatically persisted across browser sessions via `localStorage`.
-
----
-
-## 📁 Complete Project Structure
+## 📂 Project Structure
 
 ```
-src/
-├── app/
-│   ├── layout.tsx                      ← Root layout with Theme, Simulation, SOS providers & global SOSModal
-│   ├── page.tsx                        ← Cinematic hero landing with Three.js particle field & tagline
-│   ├── globals.css                     ← Dual-cockpit CSS custom variables & KaTeX typography
-│   ├── dashboard/
-│   │   └── page.tsx                    ← Main 60 Hz simulation cockpit with ?scenario= query loader
-│   ├── architecture/
-│   │   └── page.tsx                    ← 6-stage animated system flow diagram & KaTeX formula explainer
-│   ├── scenarios/
-│   │   └── page.tsx                    ← 5 Indian road edge cases comparison table & masonry cards
-│   ├── emergency-sos/
-│   │   └── page.tsx                    ← Dedicated full-screen ASIL-D emergency fail-safe route
-│   └── team/
-│       └── page.tsx                    ← Core engineering team roster
-├── components/
-│   ├── layout/
-│   │   ├── DashboardLayout.tsx         ← Responsive 4-column desktop / tablet / mobile layout shell
-│   │   ├── PanelGrid.tsx               ← CSS Grid orchestrator with compact floating feeds overlay
-│   │   ├── CollapsibleDrawer.tsx       ← Focus-trapped mobile/tablet bottom drawers
-│   │   ├── StickyHeader.tsx            ← Navigation header with live CAN-bus marquee & theme toggle
-│   │   └── ScrollableSidebar.tsx       ← Safe overflow scenario list & system health sidebar
-│   ├── hero/
-│   │   ├── PhilosophyHero.tsx          ← Full-bleed cinematic landing hero
-│   │   ├── AnimatedTagline.tsx         ← Deterministic word-by-word typewriter effect (80ms/word)
-│   │   └── RoadParticleField.tsx       ← Three.js perspective road particles canvas
-│   ├── architecture/
-│   │   ├── SystemFlowDiagram.tsx       ← Animated SVG converging signal pipeline
-│   │   ├── SensorNode.tsx              ← Individual sensor suite specification card
-│   │   ├── FusionEngineBlock.tsx       ← BEVFormer & dynamic occupancy grid block
-│   │   ├── PredictionPipeline.tsx      ← Bovine-PoseNet & TTC trajectory block
-│   │   ├── MotionControllerBlock.tsx   ← APF repulsive surface & DWA velocity block
-│   │   └── FailSafeCoreBlock.tsx       ← ASIL-D drive-by-wire E-Brake block
-│   ├── math/
-│   │   ├── APFFormulaRenderer.tsx      ← KaTeX APF formulas with real-time interactive canvas heatmap
-│   │   ├── DWAObjectiveRenderer.tsx    ← KaTeX DWA scoring formulas with interactive sliders
-│   │   └── MathExplainer.tsx           ← Comprehensive mathematical documentation
-│   ├── simulation/
-│   │   ├── SimulationCanvas.tsx        ← Auto-resizing 60 Hz 2D canvas with APF contours
-│   │   ├── VehicleSprite.tsx           ← Ego vehicle sprite renderer with steering orientation
-│   │   ├── ObstacleLayer.tsx           ← Dynamic cattle, rickshaw, pedestrian, and truck obstacles
-│   │   └── TrajectoryOverlay.tsx       ← DWA lookahead trajectory rollout visualization
-│   ├── feeds/
-│   │   ├── SensorFeeds.tsx             ← Compact 2x2 perception feed grid
-│   │   ├── LiDARPointCloud.tsx         ← 128-beam 360° point cloud with polar radar sweep
-│   │   └── CameraFeedCard.tsx          ← Compact 4K/fisheye feed cards with micro HUD telemetry
-│   ├── metrics/
-│   │   ├── LiveMetrics.tsx             ← Real-time telemetry dashboard cards
-│   │   ├── SpeedGauge.tsx              ← SVG radial speedometer with dynamic needle
-│   │   ├── TTCIndicator.tsx            ← Color-coded Time-To-Collision bar
-│   │   └── OccupancyGridMini.tsx       ← 60 Hz miniature dynamic occupancy thumbnail
-│   ├── controls/
-│   │   ├── ControlPanel.tsx            ← Play, pause, reset, and manual e-brake controls
-│   │   ├── ScenarioSelector.tsx        ← Scenario edge case selector
-│   │   └── SpeedSlider.tsx             ← 0.25x to 4.0x simulation speed slider
-│   ├── scenarios/
-│   │   ├── ScenarioCard.tsx            ← Edge scenario card with severity badge & deep link
-│   │   ├── ScenarioTable.tsx           ← Comprehensive scenario comparison matrix
-│   │   └── ScenarioSimulator.tsx       ← In-card mini-simulator launcher
-│   ├── emergency/
-│   │   ├── SOSModal.tsx                ← Glassmorphic emergency modal overlay
-│   │   ├── CountdownTimer.tsx          ← 3-second circular SVG countdown timer
-│   │   ├── GPSCoordinateDisplay.tsx    ← RTK-GPS ±1.4cm precision coordinates
-│   │   ├── VoiceSiren.tsx              ← Web Speech voice synthesis + dual-tone audio siren
-│   │   └── CV2XPacketLog.tsx           ← 5G NR Band n78 C-V2X URLLC packet stream
-│   ├── team/
-│   │   ├── TeamGrid.tsx                ← Responsive 3-column team grid
-│   │   └── MemberCard.tsx              ← Glassmorphic team profile card with avatar initials
-│   └── ui/
-│       ├── ThemeToggle.tsx             ← Obsidian Cyber-HUD / Titanium Lab switch
-│       ├── GlassCard.tsx               ← Reusable glassmorphic surface card
-│       ├── GlowButton.tsx              ← Cyber-glow neon action button
-│       ├── SectionHeading.tsx          ← Animated section heading with badge
-│       └── ScrollReveal.tsx            ← Intersection Observer entry animation wrapper
-├── context/
-│   ├── ThemeContext.tsx                ← Dual-cockpit theme state manager
-│   ├── SimulationContext.tsx           ← 60 Hz simulation lifecycle and obstacle state
-│   └── SOSContext.tsx                  ← ASIL-D emergency fail-safe state machine & audio engine
-├── hooks/
-│   ├── useResponsiveLayout.ts          ← MatchMedia breakpoint and orientation detector
-│   ├── usePanelState.ts                ← Mobile/tablet drawer orchestration
-│   ├── useTheme.ts                     ← Theme consumer hook
-│   ├── useSimulationLoop.ts            ← 60 Hz requestAnimationFrame physics loop
-│   ├── useSOSProtocol.ts               ← Emergency protocol & e-brake binding
-│   └── useSensorData.ts                ← Real-time noisy telemetry stream
-├── data/
-│   ├── scenarios.ts                    ← 5 edge case definitions & obstacle configurations
-│   ├── team.ts                         ← 6 core engineering profiles
-│   ├── sensors.ts                      ← Sensor specifications & optical feed metadata
-│   └── telemetry.ts                    ← CAN-bus noise & 5G C-V2X packet generator
-├── lib/
-│   ├── apf-engine.ts                   ← Artificial Potential Fields calculation engine
-│   ├── dwa-planner.ts                  ← Dynamic Window Approach velocity search & trajectory rollout
-│   ├── kinematics.ts                   ← Non-linear kinematic bicycle vehicle model
-│   └── constants.ts                    ← Vehicle dimensions, physics limits, and GPS coordinates
-└── types/
-    ├── simulation.ts                   ← SimState, EgoVehicle, Obstacle, Scenario interfaces
-    ├── sensors.ts                      ← SensorSpecification, CameraFeedInfo, PointCloud types
-    └── emergency.ts                    ← SOSState, CV2XEmergencyPacket, GPSPosition types
+raasta-ai/
+├── public/
+│   ├── assets/                         ← Hero graphics, scenario imagery, radar HUD
+│   └── favicon.ico
+├── src/
+│   ├── app/
+│   │   ├── layout.tsx                  ← Root layout with ThemeProvider, AuthProvider, Header
+│   │   ├── page.tsx                    ← Philosophy & research landing page
+│   │   ├── dashboard/                  ← Simulation Cockpit (canvas, metrics, controls, feeds)
+│   │   ├── analysis/                   ← Car Condition & Diagnostics Center with PDF downloads
+│   │   ├── architecture/               ← Sensor fusion and hardware pipeline documentation
+│   │   ├── scenarios/                  ← 5 edge case simulation lab
+│   │   ├── emergency-sos/              ← Dedicated ASIL-D emergency intervention interface
+│   │   ├── team/                       ← Research and engineering team showcase
+│   │   └── globals.css                 ← Obsidian Cyber-HUD & Titanium Lab design tokens
+│   ├── components/
+│   │   ├── auth/
+│   │   │   └── AuthModal.tsx           ← Cyber-HUD Supabase email login & free registration
+│   │   ├── layout/
+│   │   │   ├── StickyHeader.tsx        ← Navigation, auth pill, CAN ticker, SOS button
+│   │   │   ├── DashboardLayout.tsx     ← Responsive drawer & floating action orchestrator
+│   │   │   ├── PanelGrid.tsx           ← Desktop/tablet CSS grid layout
+│   │   │   └── ScrollableSidebar.tsx   ← Scenario switcher & edge corridor selector
+│   │   ├── simulation/
+│   │   │   └── SimulationCanvas.tsx    ← 60 Hz 2D Canvas kinematic vehicle simulator
+│   │   ├── metrics/
+│   │   │   ├── LiveMetrics.tsx         ← Cockpit telemetry panel with analysis link
+│   │   │   ├── SpeedGauge.tsx          ← Radial speedometer HUD
+│   │   │   └── TTCIndicator.tsx        ← Time-To-Collision color-coded alert
+│   │   ├── controls/
+│   │   │   ├── ControlPanel.tsx        ← Playback, APF tuning sliders (gated), e-brake
+│   │   │   └── SpeedSlider.tsx         ← Simulation time-warp controller
+│   │   ├── feeds/
+│   │   │   ├── SensorFeeds.tsx         ← 4-camera perception grid with auth lock overlay
+│   │   │   ├── LiDARPointCloud.tsx     ← Simulated 3D LiDAR point cloud stream
+│   │   │   └── CameraFeedCard.tsx      ← Optical feed card with detections count
+│   │   └── emergency/
+│   │       ├── SOSModal.tsx            ← Emergency modal overlay
+│   │       └── CV2XPacketLog.tsx       ← 5G NR C-V2X URLLC packet stream
+│   ├── context/
+│   │   ├── AuthContext.tsx             ← Supabase authentication & session provider
+│   │   ├── SimulationContext.tsx       ← 60 Hz simulation lifecycle & settings auto-save
+│   │   ├── SOSContext.tsx              ← ASIL-D emergency fail-safe state machine
+│   │   └── ThemeContext.tsx            ← Dual-cockpit theme state manager
+│   ├── lib/
+│   │   ├── supabaseClient.ts           ← Supabase client initialization & session config
+│   │   ├── analysisHistory.ts          ← Cloud PostgreSQL & Storage persistence service
+│   │   ├── pdfGenerator.ts             ← jsPDF automotive engineering report generator
+│   │   ├── apf-engine.ts               ← Artificial Potential Fields calculation engine
+│   │   ├── dwa-planner.ts              ← Dynamic Window Approach velocity search
+│   │   └── kinematics.ts               ← Non-linear kinematic bicycle vehicle model
+│   └── data/
+│       ├── carAnalysis.ts              ← Detailed vehicle specifications & diagnostic metrics
+│       ├── scenarios.ts                ← 5 Indian edge case definitions
+│       ├── sensors.ts                  ← Sensor specifications & feed metadata
+│       └── telemetry.ts                ← CAN-bus noise & C-V2X packet generator
 ```
 
 ---
@@ -311,25 +341,31 @@ src/
 - **Node.js**: v18.17.0+ or v20.0.0+
 - **npm**: v9.0.0+
 
-### Installation
+### 1. Installation
 ```bash
-# 1. Clone the official repository
+# Clone the repository
 git clone https://github.com/DakCamper123/raastaAI.git
 cd raastaAI
 
-# 2. Install dependencies
+# Install dependencies
 npm install
 ```
 
-### Launching the Development Server
+### 2. Environment Variables (`.env.local`)
+Create a `.env.local` file in the project root:
+```env
+NEXT_PUBLIC_SUPABASE_URL=https://kftwviyddinzlsidaxtk.supabase.co
+NEXT_PUBLIC_SUPABASE_ANON_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9...
+```
+
+### 3. Launch the Development Server
 ```bash
-# Start Next.js local development server (bound to 0.0.0.0:3000)
 npm run dev
 ```
 Open your browser and navigate to:
 👉 **`http://localhost:3000`**
 
-### Production Build
+### 4. Production Build
 ```bash
 # Compile and optimize static pages
 npm run build

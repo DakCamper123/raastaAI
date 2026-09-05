@@ -7,6 +7,10 @@ Desktop.ini
 .vscode/
 .idea/
 extensions/
+argv.json
+
+# Local Environment Files
+.env*.local
 
 # Logs & Temporary Files
 *.log

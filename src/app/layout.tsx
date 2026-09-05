@@ -1,10 +1,12 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { ThemeProvider } from '@/context/ThemeContext';
+import { AuthProvider } from '@/context/AuthContext';
 import { SimulationProvider } from '@/context/SimulationContext';
 import { SOSProvider } from '@/context/SOSContext';
 import { StickyHeader } from '@/components/layout/StickyHeader';
 import { SOSModal } from '@/components/emergency/SOSModal';
+import { AuthModal } from '@/components/auth/AuthModal';
 
 export const metadata: Metadata = {
   title: 'Raasta.AI | Autonomous Path Planning for Unstructured Indian Roads',
@@ -35,13 +37,15 @@ export default function RootLayout({
       </head>
       <body className="min-h-screen flex flex-col bg-[var(--bg-primary)] text-[var(--text-primary)] antialiased transition-colors duration-300">
         <ThemeProvider>
-          <SimulationProvider>
-            <SOSProvider>
-              <StickyHeader />
-              <SOSModal />
-              <main id="main-content" className="flex-1 w-full flex flex-col">
-                {children}
-              </main>
+          <AuthProvider>
+            <SimulationProvider>
+              <SOSProvider>
+                <StickyHeader />
+                <SOSModal />
+                <AuthModal />
+                <main id="main-content" className="flex-1 w-full flex flex-col">
+                  {children}
+                </main>
               {/* Footer */}
               <footer className="w-full border-t border-[var(--border-subtle)] bg-[var(--bg-secondary)]/80 py-8 px-4 sm:px-6 font-mono text-xs text-[var(--text-secondary)]">
                 <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
@@ -62,7 +66,8 @@ export default function RootLayout({
               </footer>
             </SOSProvider>
           </SimulationProvider>
-        </ThemeProvider>
+        </AuthProvider>
+      </ThemeProvider>
       </body>
     </html>
   );
