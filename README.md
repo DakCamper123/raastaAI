@@ -171,22 +171,50 @@ Built with zero external CSS frameworks in pure, ultra-optimized CSS3:
 
 ---
 
-## 🚀 Quickstart
+## 🚀 Multi-Page Next.js 14 Application Structure
 
-Raasta.AI is a zero-build, ultra-fast client-side application. You can launch it with any static server:
+Raasta.AI is built as a production-grade **Next.js 14 App Router** application with pure CSS3/Tailwind styling, Framer Motion animations, Three.js 3D particles, and KaTeX mathematical formula rendering:
 
+| Route | View Description | Core Interactive Features |
+|:---|:---|:---|
+| `/` | **Landing / Philosophy Hero** | Three.js perspective road particles, 80ms word typewriter tagline, SV vs India comparison, innovation cards. |
+| `/dashboard` | **Simulation Cockpit** | Responsive 4-column cockpit, 60 Hz kinematic APF/DWA canvas, live Recharts/SVG telemetry, scenario picker. |
+| `/architecture` | **System Flow & Math Engine** | 6-stage animated sensor fusion pipeline diagram + KaTeX mathematical breakdown with interactive sliders. |
+| `/scenarios` | **5 Indian Road Edge Cases** | Comprehensive matrix comparison table, threat severity badges, deep-linking simulator launchers. |
+| `/emergency-sos` | **Full-Screen ASIL-D Fail-Safe** | 3-second abort ring, RTK-GPS NH-48 readout, Web Speech synthesizer, Web Audio siren, 5G NR C-V2X log. |
+| `/team` | **Core Engineering Team** | Hexagonal/glassmorphic profile cards with stagger reveal animations and role badges. |
+
+---
+
+## 💻 Quickstart & Local Development
+
+### Prerequisites
+- Node.js 18+ or 20+
+- npm 9+
+
+### Installation & Run
 ```bash
 # 1. Clone the repository
 git clone https://github.com/DakCamper123/raastaAI.git
 cd raastaAI
 
-# 2. Launch local server (choose one):
-python -m http.server 3000       # Python 3
-npx serve -l 3000                 # Node.js
-# Or use VS Code Live Server extension
+# 2. Install dependencies
+npm install
 
-# 3. Open in your browser
-http://localhost:3000/index.html
+# 3. Start local development server (Turbopack / Next.js)
+npm run dev
+
+# 4. Open in your browser
+http://localhost:3000
+```
+
+### Production Build
+```bash
+# Build the optimized production bundle
+npm run build
+
+# Start production server
+npm run start
 ```
 
 ---

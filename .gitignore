@@ -13,3 +13,10 @@ extensions/
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+# Build & Framework
+node_modules/
+.next/
+out/
+build/
+*.tsbuildinfo
+.vercel/

@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import 'katex/dist/katex.min.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* THEME A: Obsidian Cyber-HUD (Default Dark) */
+  --bg-primary: #06090e;
+  --bg-secondary: #0a0f18;
+  --bg-tertiary: #111827;
+  --surface-glass: rgba(10, 15, 24, 0.72);
+  --accent-cyan: #00f0ff;
+  --accent-cyan-glow: 0 0 20px rgba(0, 240, 255, 0.4);
+  --accent-amber: #ffaa00;
+  --accent-amber-glow: 0 0 15px rgba(255, 170, 0, 0.3);
+  --danger-red: #ff3355;
+  --success-green: #00ff88;
+  --text-primary: #e8edf5;
+  --text-secondary: #8892a4;
+  --text-muted: #4a5568;
+  --border-subtle: rgba(0, 240, 255, 0.12);
+  --grid-line: rgba(0, 240, 255, 0.06);
+  color-scheme: dark;
+}
+
+[data-theme="light"] {
+  /* THEME B: Titanium Lab Telemetry (Light) */
+  --bg-primary: #f4f6fa;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #e8ecf2;
+  --surface-glass: rgba(255, 255, 255, 0.82);
+  --accent-cyan: #0077cc;
+  --accent-cyan-glow: 0 0 12px rgba(0, 119, 204, 0.2);
+  --accent-amber: #d97706;
+  --accent-amber-glow: 0 0 10px rgba(217, 119, 6, 0.15);
+  --danger-red: #dc2626;
+  --success-green: #16a34a;
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-muted: #94a3b8;
+  --border-subtle: rgba(0, 119, 204, 0.15);
+  --grid-line: rgba(0, 119, 204, 0.08);
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  overflow-x: hidden;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Cyber-HUD Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-subtle);
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-cyan);
+}
+
+/* Glassmorphic Utilities */
+.glass-panel {
+  background: var(--surface-glass);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--border-subtle);
+}
+
+.glow-cyan {
+  text-shadow: 0 0 12px var(--accent-cyan);
+}
+
+.glow-amber {
+  text-shadow: 0 0 10px var(--accent-amber);
+}
+
+.glow-danger {
+  text-shadow: 0 0 12px var(--danger-red);
+}
+
+/* Pulse Keyframes */
+@keyframes pulse-red-bg {
+  0%, 100% {
+    background-color: rgba(255, 51, 85, 0.08);
+  }
+  50% {
+    background-color: rgba(255, 51, 85, 0.22);
+  }
+}
+
+.sos-bg-pulse {
+  animation: pulse-red-bg 2s infinite ease-in-out;
+}
