@@ -90,18 +90,47 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         password,
       });
 
-      if (!error) {
+      if (error) {
+        // If Supabase mailer failed with "Error sending confirmation email" or "User already registered",
+        // attempt instant sign-in since the user might already be created/auto-confirmed in PostgreSQL
+        if (
+          error.message?.toLowerCase().includes('confirmation email') ||
+          error.message?.toLowerCase().includes('already registered')
+        ) {
+          const signInRes = await supabase.auth.signInWithPassword({
+            email,
+            password,
+          });
+
+          if (!signInRes.error && signInRes.data.user) {
+            setUser(signInRes.data.user);
+            setSession(signInRes.data.session);
+            closeAuthModal();
+            return { error: null, user: signInRes.data.user, needsConfirmation: false };
+          }
+        }
+        return { error, user: null, needsConfirmation: false };
+      }
+
+      if (data) {
         if (data.session) {
           setUser(data.user);
           setSession(data.session);
           closeAuthModal();
           return { error: null, user: data.user, needsConfirmation: false };
         } else {
-          // Email confirmation is required by Supabase project config
+          // Attempt immediate login in case user was auto-confirmed via PostgreSQL trigger
+          const autoSignIn = await supabase.auth.signInWithPassword({ email, password });
+          if (!autoSignIn.error && autoSignIn.data.user) {
+            setUser(autoSignIn.data.user);
+            setSession(autoSignIn.data.session);
+            closeAuthModal();
+            return { error: null, user: autoSignIn.data.user, needsConfirmation: false };
+          }
           return { error: null, user: data.user, needsConfirmation: true };
         }
       }
-      return { error, user: null, needsConfirmation: false };
+      return { error: null, user: null, needsConfirmation: false };
     } catch (err: any) {
       return { error: err, user: null, needsConfirmation: false };
     }

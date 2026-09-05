@@ -199,9 +199,27 @@ export function AuthModal() {
             <form onSubmit={handleSubmit} className="flex flex-col gap-3.5">
               {/* Error Banner */}
               {errorMsg && (
-                <div className="p-3 rounded-lg bg-[var(--danger-red)]/15 border border-[var(--danger-red)]/40 text-[var(--danger-red)] text-xs flex items-center gap-2 animate-shake">
-                  <AlertCircle className="w-4 h-4 shrink-0" />
-                  <span>{errorMsg}</span>
+                <div className="p-3 rounded-lg bg-[var(--danger-red)]/15 border border-[var(--danger-red)]/40 text-[var(--danger-red)] text-xs flex flex-col gap-1.5 animate-shake">
+                  <div className="flex items-start gap-2">
+                    <AlertCircle className="w-4 h-4 shrink-0 mt-0.5" />
+                    <span>
+                      {errorMsg.includes('confirmation email')
+                        ? 'Supabase email service could not send the verification message (default rate limit / unverified domain). If your account was already created, try signing in directly!'
+                        : errorMsg}
+                    </span>
+                  </div>
+                  {mode === 'signup' && (
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setMode('signin');
+                        setErrorMsg(null);
+                      }}
+                      className="text-left font-bold text-[var(--accent-cyan)] hover:underline text-[11px] ml-6"
+                    >
+                      → Switch to Sign In with your password
+                    </button>
+                  )}
                 </div>
               )}
 
