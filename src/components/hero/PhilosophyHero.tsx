@@ -33,12 +33,17 @@ export function PhilosophyHero() {
         </div>
 
         {/* Brand Display Title */}
-        <h1 className="text-4xl sm:text-6xl md:text-7xl font-black font-display tracking-tight text-[var(--text-primary)]">
-          Adaptive Path Planning for{' '}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-cyan)] via-[var(--accent-amber)] to-[var(--accent-cyan)] glow-cyan">
-            Unstructured Indian Roads
-          </span>
-        </h1>
+        <div className="flex flex-col items-center gap-3">
+          <h1 className="text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black font-display tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-cyan)] via-[var(--accent-amber)] to-[var(--accent-cyan)] glow-cyan select-none py-1">
+            रास्ता.ai
+          </h1>
+          <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold font-display tracking-tight text-[var(--text-primary)] max-w-4xl">
+            Adaptive Path Planning for{' '}
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-cyan)] via-[var(--accent-amber)] to-[var(--accent-cyan)] glow-cyan">
+              Unstructured Indian Roads
+            </span>
+          </h2>
+        </div>
 
         {/* Animated Philosophy Tagline */}
         <div className="max-w-4xl py-3 px-6 rounded-2xl border border-[var(--border-subtle)] bg-[var(--surface-glass)]/60 backdrop-blur-xl">
