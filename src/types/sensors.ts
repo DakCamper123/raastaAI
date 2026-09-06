@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Sensor Suite and Point Cloud Types
+ * NavDrishti - Sensor Suite and Point Cloud Types
  */
 
 export type SensorModal = 'lidar' | 'camera' | 'radar' | 'gnss';

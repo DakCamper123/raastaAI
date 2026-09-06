@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - StickyHeader Navigation Component
+ * NavDrishti - StickyHeader Navigation Component
  * Houses Brand Radar, Nav Links, Live CAN-Bus Ticker, Theme Toggle, and Emergency SOS button.
  */
 
@@ -49,9 +49,9 @@ export function StickyHeader() {
               <div className="w-2 h-2 rounded-full bg-[var(--accent-cyan)] shadow-[0_0_8px_var(--accent-cyan)]" />
             </div>
             <div className="flex flex-col">
-              <div className="flex items-center gap-1.5 font-display font-black text-xl tracking-tight text-[var(--text-primary)]">
-                <span>RAASTA</span>
-                <span className="text-[var(--accent-cyan)]">.AI</span>
+              <div className="flex items-center gap-1 font-display font-black text-xl tracking-tight text-[var(--text-primary)]">
+                <span>NAV</span>
+                <span className="text-[var(--accent-cyan)]">DRISHTI</span>
               </div>
               <span className="font-mono text-[9px] uppercase tracking-widest text-[var(--text-muted)] -mt-1">
                 BharatNav L4+

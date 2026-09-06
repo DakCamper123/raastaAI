@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Non-Linear Kinematic Bicycle Model
+ * NavDrishti - Non-Linear Kinematic Bicycle Model
  * Computes vehicle translation, slip angle (beta), and yaw rate.
  */
 

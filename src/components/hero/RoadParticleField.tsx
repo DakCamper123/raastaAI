@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - RoadParticleField Component
+ * NavDrishti - RoadParticleField Component
  * Three.js perspective road particles flowing continuously in an infinite tunnel.
  */
 

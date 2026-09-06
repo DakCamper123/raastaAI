@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - MotionControllerBlock Component
+ * NavDrishti - MotionControllerBlock Component
  * Hybrid APF repulsive field and DWA velocity window path planning.
  */
 

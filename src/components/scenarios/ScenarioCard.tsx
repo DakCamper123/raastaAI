@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ScenarioCard Component
+ * NavDrishti - ScenarioCard Component
  * Individual edge case card with perception thumbnail, threat profile, and direct simulation launcher.
  */
 

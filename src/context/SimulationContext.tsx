@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Simulation Context
+ * NavDrishti - Simulation Context
  * Central orchestrator for vehicle kinematics, APF, DWA, obstacles, and telemetry.
  */
 

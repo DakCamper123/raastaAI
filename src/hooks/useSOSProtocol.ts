@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - useSOSProtocol Hook
+ * NavDrishti - useSOSProtocol Hook
  * Binds Emergency SOS state machine with simulator E-Brake actuation.
  */
 

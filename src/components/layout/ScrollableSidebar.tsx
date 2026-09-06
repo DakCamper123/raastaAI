@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ScrollableSidebar Component
+ * NavDrishti - ScrollableSidebar Component
  * Overflow-safe sidebar housing Scenario Selector, Scenario Inspector, and Simulation Parameters.
  */
 

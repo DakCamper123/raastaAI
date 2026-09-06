@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - APFFormulaRenderer Component
+ * NavDrishti - APFFormulaRenderer Component
  * Renders mathematical formulation of Artificial Potential Fields with interactive parameter sliders
  * and real-time 2D potential field contour canvas visualization.
  */

@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Core Constants and Physics Constraints
+ * NavDrishti - Core Constants and Physics Constraints
  */
 
 export const VEHICLE_CONSTANTS = {

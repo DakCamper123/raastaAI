@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ScenarioSimulator Component
+ * NavDrishti - ScenarioSimulator Component
  * Mini-interactive scenario preview with danger vector inspector.
  */
 

@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SimulationCanvas Component
+ * NavDrishti - SimulationCanvas Component
  * ResizeObserver-driven 2D kinematic road canvas executing 60Hz physics and rendering.
  */
 
@@ -113,7 +113,7 @@ export function SimulationCanvas({ className = '' }: { className?: string }) {
         ref={canvasRef}
         className="w-full h-full block cursor-crosshair"
         role="img"
-        aria-label={`Raasta.AI Autonomous Path Planning 2D Simulator - Scenario: ${scenario.title}`}
+        aria-label={`NavDrishti Autonomous Path Planning 2D Simulator - Scenario: ${scenario.title}`}
       />
 
       {/* Top HUD Simulator Overlay */}

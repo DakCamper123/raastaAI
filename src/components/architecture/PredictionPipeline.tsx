@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - PredictionPipeline Component
+ * NavDrishti - PredictionPipeline Component
  * Bovine-PoseNet, TTC vectors, and game-theoretic tactical negotiation model.
  */
 

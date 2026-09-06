@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - ObstacleLayer Canvas Renderer
+ * NavDrishti - ObstacleLayer Canvas Renderer
  * Renders heterogeneous obstacles: cows, rickshaws, pedestrians, trucks, and potholes with TTC tags.
  */
 

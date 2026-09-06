@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Autonomous Navigation Core Team Page
+ * NavDrishti - Autonomous Navigation Core Team Page
  */
 
 import React from 'react';

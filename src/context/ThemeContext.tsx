@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Dual Cockpit Theme Context
+ * NavDrishti - Dual Cockpit Theme Context
  * Manages Obsidian Cyber-HUD (Dark) vs Titanium Lab Telemetry (Light)
  */
 
@@ -25,7 +25,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   useEffect(() => {
     setMounted(true);
     try {
-      const saved = localStorage.getItem('raasta_theme') as ThemeMode | null;
+      const saved = (localStorage.getItem('navdrishti_theme') || localStorage.getItem('raasta_theme')) as ThemeMode | null;
       if (saved === 'light' || saved === 'dark') {
         setThemeState(saved);
         document.documentElement.setAttribute('data-theme', saved);
@@ -43,7 +43,7 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const setTheme = (nextTheme: ThemeMode) => {
     setThemeState(nextTheme);
     try {
-      localStorage.setItem('raasta_theme', nextTheme);
+      localStorage.setItem('navdrishti_theme', nextTheme);
       document.documentElement.setAttribute('data-theme', nextTheme);
       document.documentElement.classList.toggle('dark', nextTheme === 'dark');
     } catch (e) {

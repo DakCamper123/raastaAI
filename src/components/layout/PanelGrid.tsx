@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - PanelGrid Component
+ * NavDrishti - PanelGrid Component
  * CSS Grid orchestrator adapting dynamically to Desktop, Tablet, and Mobile breakpoints.
  */
 

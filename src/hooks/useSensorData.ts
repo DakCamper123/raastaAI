@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - useSensorData Hook
+ * NavDrishti - useSensorData Hook
  * Real-time telemetry feed hook providing live vehicle and sensor metrics.
  */
 

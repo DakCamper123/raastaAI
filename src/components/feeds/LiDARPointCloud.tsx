@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - LiDARPointCloud Component
+ * NavDrishti - LiDARPointCloud Component
  * 128-beam 360-degree point cloud visualization with polar coordinate sweep.
  */
 

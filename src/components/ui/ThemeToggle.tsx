@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ThemeToggle Component
+ * NavDrishti - ThemeToggle Component
  * Toggles Obsidian Cyber-HUD vs Titanium Lab Telemetry
  */
 

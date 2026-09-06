@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Vehicle Analysis History & User Settings Persistence
+ * NavDrishti - Vehicle Analysis History & User Settings Persistence
  * Manages cloud storage in Supabase PostgreSQL and Supabase Storage with local caching.
  */
 
@@ -31,8 +31,8 @@ export interface UserPersistedSettings {
   speedWarp?: number;
 }
 
-const LOCAL_STORAGE_KEY = 'raasta_analysis_history';
-const SETTINGS_STORAGE_KEY = 'raasta_user_settings';
+const LOCAL_STORAGE_KEY = 'navdrishti_analysis_history';
+const SETTINGS_STORAGE_KEY = 'navdrishti_user_settings';
 
 /**
  * Persists a new vehicle analysis snapshot and optional PDF into Supabase and local storage.
@@ -163,7 +163,7 @@ export async function saveAnalysisSnapshot(
 export async function fetchAnalysisHistory(userId?: string | null): Promise<AnalysisHistoryItem[]> {
   let localItems: AnalysisHistoryItem[] = [];
   try {
-    const raw = localStorage.getItem(LOCAL_STORAGE_KEY);
+    const raw = localStorage.getItem(LOCAL_STORAGE_KEY) || localStorage.getItem('raasta_analysis_history');
     if (raw) localItems = JSON.parse(raw);
   } catch (err) {
     console.warn('LocalStorage read error:', err);
@@ -282,7 +282,7 @@ export async function fetchUserSettings(
   }
 
   try {
-    const raw = localStorage.getItem(SETTINGS_STORAGE_KEY);
+    const raw = localStorage.getItem(SETTINGS_STORAGE_KEY) || localStorage.getItem('raasta_user_settings');
     if (raw) return JSON.parse(raw);
   } catch (e) {
     console.warn('Error reading settings from localStorage:', e);

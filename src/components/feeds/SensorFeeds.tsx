@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SensorFeeds Component
+ * NavDrishti - SensorFeeds Component
  * 4-card feed grid showing LiDAR point cloud, 2x camera feeds, and radar heatmap.
  * Gated behind Supabase free email authentication.
  */

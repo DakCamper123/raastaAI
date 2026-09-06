@@ -9,7 +9,7 @@ import { SOSModal } from '@/components/emergency/SOSModal';
 import { AuthModal } from '@/components/auth/AuthModal';
 
 export const metadata: Metadata = {
-  title: 'Raasta.AI | Autonomous Path Planning for Unstructured Indian Roads',
+  title: 'NavDrishti | Autonomous Path Planning for Unstructured Indian Roads',
   description:
     'Level 4+ autonomous motion planning, 360° sensor fusion HUD, and ASIL-D safety architecture engineered for unstructured, chaotic Indian road corridors.',
   keywords: [
@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     'Dynamic Window Approach',
     'C-V2X',
     'Self-Driving Cars India',
-    'Raasta AI',
+    'NavDrishti',
     'BharatNav',
   ],
 };
@@ -51,7 +51,7 @@ export default function RootLayout({
                 <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
                   <div className="flex flex-col gap-1">
                     <span className="font-display font-bold text-sm text-[var(--text-primary)]">
-                      RAASTA.AI • AUTONOMOUS SYSTEMS LABORATORY
+                      NAVDRISHTI • AUTONOMOUS SYSTEMS LABORATORY
                     </span>
                     <span className="text-[11px] text-[var(--text-muted)]">
                       ISO 26262 ASIL-D Aligned Kinodynamic Safety Platform • 2026

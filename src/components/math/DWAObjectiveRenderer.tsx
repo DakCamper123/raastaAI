@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - DWAObjectiveRenderer Component
+ * NavDrishti - DWAObjectiveRenderer Component
  * KaTeX rendering of Dynamic Window Approach multi-objective scoring function
  * with interactive weight sliders (alpha, beta, gamma).
  */

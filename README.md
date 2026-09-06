@@ -1,15 +1,15 @@
 <div align="center">
 
 ```
-██████╗  █████╗  █████╗ ███████╗████████╗ █████╗     █████╗ ██╗
-██╔══██╗██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔══██╗   ██╔══██╗██║
-██████╔╝███████║███████║███████╗   ██║   ███████║   ███████║██║
-██╔══██╗██╔══██║██╔══██║╚════██║   ██║   ██╔══██║   ██╔══██║██║
-██║  ██║██║  ██║██║  ██║███████║   ██║   ██║  ██║██╗██║  ██║██║
-╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝╚══════╝   ╚═╝   ╚═╝  ╚═╝╚═╝╚═╝  ╚═╝╚═╝
+███╗   ██╗ █████╗ ██╗   ██╗██████╗ ██████╗ ██╗███████╗██╗  ██╗████████╗██╗
+████╗  ██║██╔══██╗██║   ██║██╔══██╗██╔══██╗██║██╔════╝██║  ██║╚══██╔══╝██║
+██╔██╗ ██║███████║██║   ██║██║  ██║██████╔╝██║███████╗███████║   ██║   ██║
+██║╚██╗██║██╔══██║╚██╗ ██╔╝██║  ██║██╔══██╗██║╚════██║██╔══██║   ██║   ██║
+██║ ╚████║██║  ██║ ╚████╔╝ ██████╔╝██║  ██║██║███████║██║  ██║   ██║   ██║
+╚═╝  ╚═══╝╚═╝  ╚═╝  ╚═══╝  ╚═════╝ ╚═╝  ╚═╝╚═╝╚══════╝╚═╝  ╚═╝   ╚═╝   ╚═╝
 ```
 
-# रास्ता.AI (Raasta.AI / BharatNav-AI)
+# नवदृष्टि (NavDrishti / BharatNav-AI)
 ### *Next-Generation Autonomous Vehicle Simulation & Telematics Platform Engineered for Unstructured Corridors*
 
 [![Next.js 14](https://img.shields.io/badge/Framework-Next.js%2014%20(App%20Router)-black?style=for-the-badge&logo=next.js)](https://nextjs.org/)
@@ -27,13 +27,13 @@
   <b>A production-grade, zero-external-UI-library autonomous mobility simulator and diagnostic telemetry platform featuring 60 Hz kinematic physics, dynamic Artificial Potential Fields (APF), Dynamic Window Approach (DWA), dedicated Car Analysis Center, Supabase email authentication, cloud PDF storage, and full persistence.</b>
 </p>
 
-[Philosophy](#-the-raasta-philosophy) • [Car Analysis & Diagnostics](#-car-condition--analysis-center) • [Email Auth & Gated Access](#-free-email-authentication--gated-access) • [Cloud & Local Persistence](#-cloud--local-persistence-architecture) • [Simulation Cockpit](#-simulation-cockpit) • [Architecture](#-system-architecture) • [Mathematical Engine](#-mathematical-engine) • [Edge Scenarios](#-5-indian-road-edge-scenarios) • [Emergency SOS](#-emergency-sos--fail-safe-architecture) • [Team](#-engineering--research-team) • [Quickstart](#-quickstart--local-development)
+[Philosophy](#-the-navdrishti-philosophy) • [Car Analysis & Diagnostics](#-car-condition--analysis-center) • [Email Auth & Gated Access](#-free-email-authentication--gated-access) • [Cloud & Local Persistence](#-cloud--local-persistence-architecture) • [Simulation Cockpit](#-simulation-cockpit) • [Architecture](#-system-architecture) • [Mathematical Engine](#-mathematical-engine) • [Edge Scenarios](#-5-indian-road-edge-scenarios) • [Emergency SOS](#-emergency-sos--fail-safe-architecture) • [Team](#-engineering--research-team) • [Quickstart](#-quickstart--local-development)
 
 </div>
 
 ---
 
-## 🧭 The Raasta Philosophy: Autonomy Where It Counts
+## 🧭 The NavDrishti Philosophy: Autonomy Where It Counts
 
 > *"If an autonomous vehicle can master Old Delhi's Chandni Chowk, navigate a monsoon ghat in Kerala, and out-negotiate an unmarked rural highway merge — it can drive anywhere on Planet Earth."*
 
@@ -47,13 +47,13 @@ Conventional Level 4 autonomous driving systems developed in Silicon Valley or M
 2. **Heterogeneous Traffic Mix**: Multi-axle freight trucks, three-wheeled auto-rickshaws, customized *jugaad* tractors, 100cc motorcycles, and non-motorized handcarts share identical asphalt.
 3. **Biological & Dynamic Road Hazards**: Stray cattle (*Bos indicus*) rest on warm asphalt, requiring empathetic, non-verbal micro-negotiation and wide-radius deceleration rather than aggressive honking.
 
-**Raasta.AI** solves this real-world operational design domain (ODD) using a blended kinematic stack: **Kinodynamic Artificial Potential Fields (APF)**, **Dynamic Window Approach (DWA)**, and biological pose-tracking neural networks (**Bovine-PoseNet**).
+**NavDrishti** solves this real-world operational design domain (ODD) using a blended kinematic stack: **Kinodynamic Artificial Potential Fields (APF)**, **Dynamic Window Approach (DWA)**, and biological pose-tracking neural networks (**Bovine-PoseNet**).
 
 ---
 
 ## 🚗 Car Condition & Analysis Center (`/analysis`)
 
-Raasta.AI features a dedicated **Vehicle Condition & Telemetry Analysis Center** accessible from the primary navigation. It provides an engineering diagnostic dossier for the autonomous vehicle platform (VIN: `IND-MH12-AUTON-2026-X77`):
+NavDrishti features a dedicated **Vehicle Condition & Telemetry Analysis Center** accessible from the primary navigation. It provides an engineering diagnostic dossier for the autonomous vehicle platform (VIN: `IND-MH12-AUTON-2026-X77`):
 
 ### Comprehensive Diagnostic Subsystems
 - **Overall Health Index**: `98% NOMINAL EXCELLENT` with ISO 26262 ASIL-D certification alignment.
@@ -101,7 +101,7 @@ Users can export full vehicle diagnostics and telematics in three engineering fo
 
 ## 🔐 Free Email Authentication & Gated Access
 
-Raasta.AI integrates free, persistent email authentication powered by **Supabase Auth**:
+NavDrishti integrates free, persistent email authentication powered by **Supabase Auth**:
 
 - **100% Free Access**: Users can create a free account or sign in with their email and password.
 - **Cyber-HUD Auth Modal (`AuthModal.tsx`)**:
@@ -124,7 +124,7 @@ All user data, historical snapshots, diagnostic PDFs, and settings persist acros
 
 ```
 ┌────────────────────────────────────────────────────────────────────────┐
-│                        RAASTA.AI PERSISTENCE LAYER                     │
+│                       NAVDRISHTI PERSISTENCE LAYER                     │
 └────────────────────────────────────────────────────────────────────────┘
                     │                                    │
                     ▼                                    ▼
@@ -144,8 +144,9 @@ All user data, historical snapshots, diagnostic PDFs, and settings persist acros
                          ┌────────────────────────┐
                          │   BROWSER LOCALSTORAGE │
                          │                        │
-                         │ • raasta_analysis_hist │
-                         │ • raasta_user_settings │
+                         │ • navdrishti_analysis_ │
+                         │   history              │
+                         │ • navdrishti_settings  │
                          └────────────────────────┘
 ```
 
@@ -214,7 +215,7 @@ All user data, historical snapshots, diagnostic PDFs, and settings persist acros
 
 ## 🧮 Mathematical Engine
 
-Raasta.AI combines dynamic artificial potential surfaces with localized velocity space search executing at a deterministic **60 Hz refresh rate**:
+NavDrishti combines dynamic artificial potential surfaces with localized velocity space search executing at a deterministic **60 Hz refresh rate**:
 
 ### 1. Artificial Potential Fields (APF)
 The net virtual force vector driving the autonomous vehicle is given by:
@@ -262,7 +263,7 @@ $$G(v, \omega) = \alpha \cdot \text{heading}(v, \omega) + \beta \cdot \text{dist
 ## 📂 Project Structure
 
 ```
-raasta-ai/
+navdrishti/
 ├── public/
 │   ├── assets/                         ← Hero graphics, scenario imagery, radar HUD
 │   └── favicon.ico
@@ -386,5 +387,5 @@ Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for complete ter
 
 <div align="center">
   <sub>Engineered with precision for the future of Indian autonomous mobility.</sub><br>
-  <b>Raasta.AI • Autonomous Systems Laboratory • 2026</b>
+  <b>NavDrishti • Autonomous Systems Laboratory • 2026</b>
 </div>

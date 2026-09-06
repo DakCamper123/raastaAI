@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - PhilosophyHero Component
+ * NavDrishti - PhilosophyHero Component
  * Full-viewport cinematic hero with RoadParticleField, AnimatedTagline, and CTA.
  */
 

@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - AnimatedTagline Component
+ * NavDrishti - AnimatedTagline Component
  * Typewriter effect revealing the Chandni Chowk -> Kerala ghat -> rural highway quote word by word.
  */
 

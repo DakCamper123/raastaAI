@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ControlPanel Component
+ * NavDrishti - ControlPanel Component
  * Playback, Scenario picker, Warp slider, and APF/DWA parameters control center.
  * Tuning settings are protected behind Supabase free email authentication.
  */

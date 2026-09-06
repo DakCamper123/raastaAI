@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SystemFlowDiagram Component
+ * NavDrishti - SystemFlowDiagram Component
  * Animated vertical flow diagram connecting the autonomous stack stages with pulsing SVG signals.
  */
 

@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ScenarioSelector Component
+ * NavDrishti - ScenarioSelector Component
  * Quick picker dropdown for the 5 Indian edge scenarios.
  */
 

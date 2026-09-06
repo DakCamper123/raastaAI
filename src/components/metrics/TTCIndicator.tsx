@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - TTCIndicator Component
+ * NavDrishti - TTCIndicator Component
  * Time-To-Collision bar with color-coded safety zones.
  */
 

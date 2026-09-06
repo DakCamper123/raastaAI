@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - CameraFeedCard Component
+ * NavDrishti - CameraFeedCard Component
  * Optical sensor feed card with bounding boxes and live FPS/latency metrics.
  */
 

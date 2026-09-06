@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SpeedGauge Component
+ * NavDrishti - SpeedGauge Component
  * SVG radial speedometer with digital speed readout and dynamic needle sweep.
  */
 

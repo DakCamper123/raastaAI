@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Sensor Suite Specifications
+ * NavDrishti - Sensor Suite Specifications
  */
 
 import { SensorSpecification, CameraFeedInfo } from '@/types/sensors';

@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Vehicle Condition & Diagnostic Telematics PDF Generator
+ * NavDrishti - Vehicle Condition & Diagnostic Telematics PDF Generator
  * Creates an automotive engineering PDF report and returns binary Blob for Supabase upload and download.
  */
 
@@ -24,7 +24,7 @@ export function generateCarDiagnosticPDF(
 
   const title = customTitle || 'VEHICLE CONDITION & TELEMETRY DIAGNOSTIC DOSSIER';
   const timestamp = new Date().toLocaleString('en-US', { timeZoneName: 'short' });
-  const filename = `RaastaAI_Vehicle_Report_${Date.now()}.pdf`;
+  const filename = `NavDrishti_Vehicle_Report_${Date.now()}.pdf`;
 
   // Colors
   const primaryDark = [10, 15, 24]; // #0a0f18
@@ -42,9 +42,9 @@ export function generateCarDiagnosticPDF(
   doc.setFont('helvetica', 'bold');
   doc.setFontSize(16);
   doc.setTextColor(255, 255, 255);
-  doc.text('RAASTA', 14, 14);
+  doc.text('NAV', 14, 14);
   doc.setTextColor(cyan[0], cyan[1], cyan[2]);
-  doc.text('.AI', 41, 14);
+  doc.text('DRISHTI', 28, 14);
 
   doc.setFontSize(8);
   doc.setFont('helvetica', 'normal');
@@ -195,7 +195,7 @@ export function generateCarDiagnosticPDF(
   doc.setFont('helvetica', 'normal');
   doc.setTextColor(grayText[0], grayText[1], grayText[2]);
   doc.text(
-    'CONFIDENTIAL AUTOMOTIVE RESEARCH REPORT • RAASTA.AI AUTONOMOUS SYSTEMS LABORATORY • BHARATNAV',
+    'CONFIDENTIAL AUTOMOTIVE RESEARCH REPORT • NAVDRISHTI AUTONOMOUS SYSTEMS LABORATORY • BHARATNAV',
     14,
     y
   );

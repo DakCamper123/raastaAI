@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - GlowButton Component
+ * NavDrishti - GlowButton Component
  * High-contrast cyber-styled CTA button with neon glow feedback.
  */
 

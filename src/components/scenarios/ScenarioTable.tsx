@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ScenarioTable Component
+ * NavDrishti - ScenarioTable Component
  * Responsive comparison data table breaking down the 5 Indian road edge scenarios.
  */
 

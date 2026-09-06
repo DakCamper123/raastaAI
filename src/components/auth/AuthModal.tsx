@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Cyber-HUD Authentication Modal
+ * NavDrishti - Cyber-HUD Authentication Modal
  * Glassmorphic Supabase modal providing free registration and login with real-time feedback.
  */
 
@@ -125,9 +125,9 @@ export function AuthModal() {
               <Lock className="w-6 h-6 text-[var(--accent-cyan)]" />
             </div>
 
-            <div className="flex items-center gap-1.5 font-display font-black text-xl tracking-tight text-[var(--text-primary)]">
-              <span>RAASTA</span>
-              <span className="text-[var(--accent-cyan)]">.AI</span>
+            <div className="flex items-center gap-1 font-display font-black text-xl tracking-tight text-[var(--text-primary)]">
+              <span>NAV</span>
+              <span className="text-[var(--accent-cyan)]">DRISHTI</span>
               <span className="ml-1 px-2 py-0.5 text-[9px] font-mono uppercase bg-[var(--accent-cyan)]/15 text-[var(--accent-cyan)] rounded-full border border-[var(--accent-cyan)]/30">
                 Free Access
               </span>

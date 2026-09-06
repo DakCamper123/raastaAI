@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - TrajectoryOverlay Canvas Renderer
+ * NavDrishti - TrajectoryOverlay Canvas Renderer
  * Renders the DWA projected kinodynamic trajectory ribbon.
  */
 

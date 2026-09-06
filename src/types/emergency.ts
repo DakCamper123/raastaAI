@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Emergency SOS & Fail-Safe Protocol Types
+ * NavDrishti - Emergency SOS & Fail-Safe Protocol Types
  */
 
 export type SOSStatus = 'IDLE' | 'COUNTDOWN' | 'DISPATCHED' | 'ABORTED' | 'STANDBY';

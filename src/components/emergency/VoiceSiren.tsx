@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - VoiceSiren Component
+ * NavDrishti - VoiceSiren Component
  * Status monitor and manual trigger for the dual-frequency siren and speech alert.
  */
 

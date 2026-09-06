@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - FailSafeCoreBlock Component
+ * NavDrishti - FailSafeCoreBlock Component
  * Drive-by-wire actuation, ISO 26262 ASIL-D hydraulic fail-safe, 5G C-V2X broadcast, and acoustic siren.
  */
 

@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - usePanelState Hook
+ * NavDrishti - usePanelState Hook
  * Controls panel expansion, collapse, and active drawer selection.
  */
 

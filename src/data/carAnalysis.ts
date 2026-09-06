@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Vehicle Condition & Diagnostic Telematics Data
+ * NavDrishti - Vehicle Condition & Diagnostic Telematics Data
  * Detailed real-world diagnostic specifications for the BharatNav Autonomous EV Mule.
  */
 

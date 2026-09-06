@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - CountdownTimer Component
+ * NavDrishti - CountdownTimer Component
  * 3-second circular SVG countdown timer with animated progress ring and abort trigger.
  */
 

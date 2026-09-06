@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - useSimulationLoop Hook
+ * NavDrishti - useSimulationLoop Hook
  * 60Hz RequestAnimationFrame loop executing kinematics, APF forces, and DWA planning.
  */
 

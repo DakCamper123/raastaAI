@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Dynamic Window Approach (DWA) Local Planner
+ * NavDrishti - Dynamic Window Approach (DWA) Local Planner
  * Searches reachable velocity space (v, w) and optimizes trajectory score.
  */
 

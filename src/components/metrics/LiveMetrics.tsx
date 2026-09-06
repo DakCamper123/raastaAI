@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - LiveMetrics Component
+ * NavDrishti - LiveMetrics Component
  * Telemetry dashboard panel displaying SpeedGauge, TTCIndicator, OccupancyGrid, and CAN-Bus metrics.
  * Integrates quick link to full Car Analysis and telemetry export with Supabase Auth gating.
  */
@@ -32,7 +32,7 @@ export function LiveMetrics({ className = '' }: { className?: string }) {
 
     const payload = {
       timestamp: new Date().toISOString(),
-      source: 'RAASTA.AI Live Telemetry Stream',
+      source: 'NavDrishti Live Telemetry Stream',
       telemetry,
       status: 'AUTHENTICATED_DOWNLOAD',
     };
@@ -40,7 +40,7 @@ export function LiveMetrics({ className = '' }: { className?: string }) {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.download = `RaastaAI_CAN_Snapshot_${Date.now()}.json`;
+    link.download = `NavDrishti_CAN_Snapshot_${Date.now()}.json`;
     link.click();
     URL.revokeObjectURL(url);
   };

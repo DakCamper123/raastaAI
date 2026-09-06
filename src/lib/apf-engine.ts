@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Kinodynamic Artificial Potential Field (APF) Engine
+ * NavDrishti - Kinodynamic Artificial Potential Field (APF) Engine
  * Calculates attractive goal gradient and repulsive obstacle potential vectors.
  */
 

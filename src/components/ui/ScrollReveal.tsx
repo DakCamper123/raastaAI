@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - ScrollReveal Component
+ * NavDrishti - ScrollReveal Component
  * Staggered fade and slide-up transition triggered on viewport intersection.
  */
 

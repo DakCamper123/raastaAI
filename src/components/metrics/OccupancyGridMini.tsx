@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - OccupancyGridMini Component
+ * NavDrishti - OccupancyGridMini Component
  * 60Hz probabilistic occupancy grid mini thumbnail visualization.
  */
 

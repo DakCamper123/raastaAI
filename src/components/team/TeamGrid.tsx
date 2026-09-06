@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - TeamGrid Component
+ * NavDrishti - TeamGrid Component
  * Responsive team grid displaying all 6 core members with Framer Motion entrance stagger.
  */
 

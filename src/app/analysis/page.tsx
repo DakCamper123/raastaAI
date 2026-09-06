@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Car Condition & Analysis Center
+ * NavDrishti - Car Condition & Analysis Center
  * Full diagnostic telemetry, battery health, ASIL-D braking metrics, multi-format report exporter,
  * and Supabase cloud persistence for historical vehicle analysis snapshots.
  */
@@ -121,7 +121,7 @@ export default function CarAnalysisPage() {
     const dataStr = 'data:text/json;charset=utf-8,' + encodeURIComponent(JSON.stringify(vehicle, null, 2));
     const downloadAnchor = document.createElement('a');
     downloadAnchor.setAttribute('href', dataStr);
-    downloadAnchor.setAttribute('download', `RaastaAI_Vehicle_Analysis_${Date.now()}.json`);
+    downloadAnchor.setAttribute('download', `NavDrishti_Vehicle_Analysis_${Date.now()}.json`);
     document.body.appendChild(downloadAnchor);
     downloadAnchor.click();
     downloadAnchor.remove();
@@ -142,7 +142,7 @@ export default function CarAnalysisPage() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.setAttribute('href', url);
-    link.setAttribute('download', `RaastaAI_Dynamics_Log_${Date.now()}.csv`);
+    link.setAttribute('download', `NavDrishti_Dynamics_Log_${Date.now()}.csv`);
     document.body.appendChild(link);
     link.click();
     link.remove();
@@ -674,7 +674,7 @@ export default function CarAnalysisPage() {
                                 href={item.pdf_url}
                                 target="_blank"
                                 rel="noopener noreferrer"
-                                download={`RaastaAI_Diagnostic_${item.id}.pdf`}
+                                download={`NavDrishti_Diagnostic_${item.id}.pdf`}
                                 className="flex items-center gap-1 px-2 py-1 rounded bg-[var(--accent-cyan)]/15 text-[var(--accent-cyan)] hover:bg-[var(--accent-cyan)]/25 border border-[var(--accent-cyan)]/30 text-[10px] font-bold transition-all"
                                 title="Download PDF stored in Supabase Storage"
                               >

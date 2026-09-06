@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - System Architecture & Mathematical Foundation Page
+ * NavDrishti - System Architecture & Mathematical Foundation Page
  */
 
 import React from 'react';

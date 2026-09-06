@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - CV2XPacketLog Component
+ * NavDrishti - CV2XPacketLog Component
  * Scrolling terminal log displaying 3GPP Release 17 URLLC emergency broadcast packets.
  */
 

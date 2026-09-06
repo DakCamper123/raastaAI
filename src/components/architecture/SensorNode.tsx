@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SensorNode Component
+ * NavDrishti - SensorNode Component
  * Card representing a hardware sensor module in the architecture stack.
  */
 

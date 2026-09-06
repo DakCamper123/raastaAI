@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - MemberCard Component
+ * NavDrishti - MemberCard Component
  * Profile card showcasing an autonomous vehicle core researcher/engineer.
  */
 

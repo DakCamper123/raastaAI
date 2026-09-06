@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Supabase Client Initialization
+ * NavDrishti - Supabase Client Initialization
  * Configures the Supabase client for free email authentication, session management, and database queries.
  */
 

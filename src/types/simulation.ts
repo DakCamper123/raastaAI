@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Autonomous Vehicle Simulation Types
+ * NavDrishti - Autonomous Vehicle Simulation Types
  */
 
 export type ObstacleType = 'cow' | 'rickshaw' | 'pedestrian' | 'truck' | 'car' | 'pothole';

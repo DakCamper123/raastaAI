@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - GPSCoordinateDisplay Component
+ * NavDrishti - GPSCoordinateDisplay Component
  * Centimeter-accurate RTK-GPS position readout for emergency dispatch.
  */
 

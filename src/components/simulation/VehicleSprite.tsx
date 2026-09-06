@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - VehicleSprite Canvas Renderer
+ * NavDrishti - VehicleSprite Canvas Renderer
  * Draws the ego autonomous vehicle with lidar sensor cone and wheel steering angles.
  */
 

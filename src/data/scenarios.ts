@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - The 5 Indian Road Edge Scenarios
+ * NavDrishti - The 5 Indian Road Edge Scenarios
  */
 
 import { ScenarioDefinition } from '@/types/simulation';

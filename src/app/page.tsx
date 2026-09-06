@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Landing Page (Philosophy & System Overview)
+ * NavDrishti - Landing Page (Philosophy & System Overview)
  */
 
 import React from 'react';
@@ -104,7 +104,7 @@ export default function HomePage() {
                 <div className="p-3.5 rounded-lg border border-[var(--accent-cyan)]/40 bg-[var(--accent-cyan)]/10 flex flex-col gap-1.5">
                   <div className="flex items-center gap-1.5 text-[var(--accent-cyan)] text-[10px] uppercase font-bold tracking-wider">
                     <span className="w-2 h-2 rounded-full bg-[var(--accent-cyan)] animate-pulse" />
-                    Indian Corridor Ground Reality (Solved by Raasta.AI)
+                    Indian Corridor Ground Reality (Solved by NavDrishti)
                   </div>
                   <p className="text-[var(--text-primary)] font-body text-xs font-semibold leading-relaxed">
                     {item.india}
@@ -116,12 +116,12 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. The Raasta.AI Solution Engine */}
+      {/* 3. The NavDrishti Solution Engine */}
       <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-[var(--border-subtle)]">
         <ScrollReveal>
           <SectionHeading
             tag="CORE INNOVATIONS"
-            title="How Raasta.AI Tames the Chaos"
+            title="How NavDrishti Tames the Chaos"
             description="Our multi-layer kinematic architecture synthesizes physics-driven energy surfaces, tactical multi-agent game theory, and biological neural networks."
           />
         </ScrollReveal>

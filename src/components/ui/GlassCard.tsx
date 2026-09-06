@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - GlassCard Component
+ * NavDrishti - GlassCard Component
  * Glassmorphic surface container with dynamic cyber glow and border transitions.
  */
 

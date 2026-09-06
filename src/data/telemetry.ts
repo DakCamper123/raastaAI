@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Real-Time Telemetry and C-V2X Packet Generators
+ * NavDrishti - Real-Time Telemetry and C-V2X Packet Generators
  */
 
 import { TelemetryData } from '@/types/simulation';
@@ -49,7 +49,7 @@ export function generateCV2XPacket(speedKmh: number = 0): CV2XEmergencyPacket {
     id: `PKT-${packetSequence}`,
     timestamp,
     packetSeq: packetSequence,
-    stationId: 'RAASTA-AV-IND-MH12-9981',
+    stationId: 'NAVDRISHTI-AV-IND-MH12-9981',
     priorityLevel: 'URLLC_CRITICAL_0',
     band: '5G NR Band n78 (3.5 GHz)',
     latitude: NH48_GPS_COORDINATES.LATITUDE + (Math.random() - 0.5) * 0.00008,

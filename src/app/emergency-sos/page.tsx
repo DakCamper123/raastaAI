@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Dedicated Emergency SOS Full-Screen Route
+ * NavDrishti - Dedicated Emergency SOS Full-Screen Route
  */
 
 import React from 'react';

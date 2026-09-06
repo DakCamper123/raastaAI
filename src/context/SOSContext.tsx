@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Emergency SOS State Machine & Audio Engine Context
+ * NavDrishti - Emergency SOS State Machine & Audio Engine Context
  */
 
 import React, { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';

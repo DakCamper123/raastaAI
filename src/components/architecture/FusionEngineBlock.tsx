@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - FusionEngineBlock Component
+ * NavDrishti - FusionEngineBlock Component
  * BEVFormer multi-cam projection, dynamic occupancy grid, and EKF pose estimation.
  */
 

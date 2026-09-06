@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SOSModal Component
+ * NavDrishti - SOSModal Component
  * Glassmorphic emergency fail-safe modal with countdown, massive central button, GPS telemetry, and C-V2X logs.
  */
 

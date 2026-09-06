@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Simulation Cockpit Page
+ * NavDrishti - Simulation Cockpit Page
  * Main cockpit orchestrating the 2D simulator canvas, CAN-bus metrics, sensor feeds, and control panel.
  */
 

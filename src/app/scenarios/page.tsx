@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - The 5 Indian Road Edge Scenarios Page
+ * NavDrishti - The 5 Indian Road Edge Scenarios Page
  */
 
 import React from 'react';

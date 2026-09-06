@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - Supabase Authentication Context
+ * NavDrishti - Supabase Authentication Context
  * Manages user auth state, free registration, login, logout, and auth modal triggers across the platform.
  */
 

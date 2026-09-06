@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SectionHeading Component
+ * NavDrishti - SectionHeading Component
  * Standardized cyber-HUD section title with tag badge and description.
  */
 

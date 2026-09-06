@@ -1,5 +1,5 @@
 /**
- * RAASTA.AI - Autonomous Systems Core Engineering Team
+ * NavDrishti - Autonomous Systems Core Engineering Team
  */
 
 export interface TeamMember {

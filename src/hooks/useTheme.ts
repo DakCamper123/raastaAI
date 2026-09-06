@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - useTheme Hook
+ * NavDrishti - useTheme Hook
  */
 
 import { useThemeContext, ThemeMode } from '@/context/ThemeContext';

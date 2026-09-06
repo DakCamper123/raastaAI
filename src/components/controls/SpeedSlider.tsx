@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - SpeedSlider Component
+ * NavDrishti - SpeedSlider Component
  * Controls simulation speed multiplier (0.25x to 4.0x).
  */
 

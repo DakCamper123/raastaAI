@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - DashboardLayout Component
+ * NavDrishti - DashboardLayout Component
  * High-level layout wrapper providing responsive drawer management and floating action buttons.
  */
 

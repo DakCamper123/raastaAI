@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - MathExplainer Component
+ * NavDrishti - MathExplainer Component
  * Interactive technical breakdown of APF + DWA kinematic synthesis.
  */
 
@@ -17,7 +17,7 @@ export function MathExplainer() {
       <SectionHeading
         tag="MATHEMATICAL FOUNDATION"
         title="Kinodynamic Energy Surfaces & Velocity Optimization"
-        description="Raasta.AI operates on a dual-layer mathematical engine running synchronously at 60 Hz: continuous potential field gradient descent hybridized with discrete reachable velocity search."
+        description="NavDrishti operates on a dual-layer mathematical engine running synchronously at 60 Hz: continuous potential field gradient descent hybridized with discrete reachable velocity search."
       />
 
       <ScrollReveal>

@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - CollapsibleDrawer Component
+ * NavDrishti - CollapsibleDrawer Component
  * Mobile and tablet accessible slide-up bottom drawer with focus trapping.
  */
 

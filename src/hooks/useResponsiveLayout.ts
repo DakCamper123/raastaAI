@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * RAASTA.AI - useResponsiveLayout Hook
+ * NavDrishti - useResponsiveLayout Hook
  * Detects device viewport breakpoints and orientation changes.
  */
 
