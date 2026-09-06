@@ -5,9 +5,9 @@ import { AuthProvider } from '@/context/AuthContext';
 import { SimulationProvider } from '@/context/SimulationContext';
 import { SOSProvider } from '@/context/SOSContext';
 import { StickyHeader } from '@/components/layout/StickyHeader';
-import { Footer } from '@/components/layout/Footer';
 import { SOSModal } from '@/components/emergency/SOSModal';
 import { AuthModal } from '@/components/auth/AuthModal';
+import { Footer } from '@/components/layout/Footer';
 
 export const metadata: Metadata = {
   title: 'NavDrishti | Autonomous Path Planning for Unstructured Indian Roads',

@@ -21,6 +21,11 @@ import {
   ArrowRight,
   Eye,
   Layers,
+  MessageSquare,
+  Brain,
+  Search,
+  BarChart3,
+  Sparkles,
 } from 'lucide-react';
 
 export default function HomePage() {
@@ -43,30 +48,48 @@ export default function HomePage() {
     },
   ];
 
-  const solutions = [
+  const workflowSteps = [
     {
-      icon: <Compass className="w-6 h-6 text-[var(--accent-cyan)]" />,
-      title: 'Kinodynamic Potential Fields (APF)',
-      desc: 'Creates virtual repulsive energy walls around obstacles, potholes, and road drop-offs, driving the vehicle safely toward open corridor minima.',
-      tag: '60 HZ GRADIENT',
+      step: '01',
+      title: 'Ask',
+      desc: 'Users ask questions naturally using voice or text in their preferred language.',
+      icon: <MessageSquare className="w-5 h-5 text-[var(--accent-cyan)]" />,
+      accent: 'cyan',
     },
     {
-      icon: <Cpu className="w-6 h-6 text-[var(--accent-amber)]" />,
-      title: 'Dynamic Window Approach (DWA)',
-      desc: 'Samples feasible acceleration windows in real time, scoring heading alignment, obstacle clearance, and speed to guarantee kinematically valid avoidance.',
-      tag: 'VELOCITY OPTIMIZER',
+      step: '02',
+      title: 'Understand',
+      desc: 'NavDrishti understands the underlying intent and parameters behind the query.',
+      icon: <Brain className="w-5 h-5 text-[var(--accent-cyan)]" />,
+      accent: 'cyan',
     },
     {
-      icon: <Eye className="w-6 h-6 text-[var(--success-green)]" />,
-      title: 'Bovine-PoseNet Biological Tracker',
-      desc: 'Specialized deep learning model estimating 18 biological keypoints of cows and buffaloes to predict head turns and movement vectors without horn panic.',
-      tag: 'BIOLOGICAL POSE',
+      step: '03',
+      title: 'Find',
+      desc: 'Relevant organizational and operational information is instantly located across repositories.',
+      icon: <Search className="w-5 h-5 text-[var(--accent-amber)]" />,
+      accent: 'amber',
     },
     {
-      icon: <Zap className="w-6 h-6 text-[var(--danger-red)]" />,
-      title: 'ASIL-D E-Brake & 5G C-V2X',
-      desc: 'Sub-40ms hydraulic fail-safe stop loop combined with ultra-low latency C-V2X emergency packet broadcast over 5G NR Band n78.',
-      tag: 'SAFETY FAIL-SAFE',
+      step: '04',
+      title: 'Analyze',
+      desc: 'Connected data streams and documents are contextualized and correlated.',
+      icon: <BarChart3 className="w-5 h-5 text-[var(--accent-amber)]" />,
+      accent: 'amber',
+    },
+    {
+      step: '05',
+      title: 'Insight',
+      desc: 'NavDrishti generates understandable plain-language summaries, charts, and data tables.',
+      icon: <Sparkles className="w-5 h-5 text-[var(--success-green)]" />,
+      accent: 'green',
+    },
+    {
+      step: '06',
+      title: 'Decide',
+      desc: 'Decision-makers leverage real-time insights to take informed, confident action.',
+      icon: <CheckCircle2 className="w-5 h-5 text-[var(--success-green)]" />,
+      accent: 'green',
     },
   ];
 
@@ -116,41 +139,42 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* 3. The NavDrishti Solution Engine */}
+      {/* 3. How NavDrishti Works */}
       <section className="w-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 border-t border-[var(--border-subtle)]">
         <ScrollReveal>
           <SectionHeading
-            tag="CORE INNOVATIONS"
-            title="How NavDrishti Tames the Chaos"
-            description="Our multi-layer kinematic architecture synthesizes physics-driven energy surfaces, tactical multi-agent game theory, and biological neural networks."
+            tag="HOW IT WORKS"
+            title="How NavDrishti Works"
+            description="A structured process designed to transform natural language queries into decision-grade clarity."
           />
         </ScrollReveal>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
-          {solutions.map((sol, idx) => (
-            <ScrollReveal key={idx} delay={idx * 0.1}>
-              <GlassCard glow="cyan" className="p-6 flex flex-col gap-3.5 h-full justify-between font-mono">
-                <div className="flex flex-col gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-10">
+          {workflowSteps.map((item, idx) => (
+            <ScrollReveal key={idx} delay={idx * 0.08}>
+              <GlassCard glow={item.accent === 'amber' ? 'amber' : 'cyan'} className="p-6 flex flex-col gap-4 h-full justify-between group transition-all duration-300 hover:border-[var(--accent-cyan)]/40 font-mono">
+                <div className="flex flex-col gap-3.5">
                   <div className="flex items-center justify-between">
-                    <div className="p-2.5 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)] shadow-inner">
-                      {sol.icon}
-                    </div>
-                    <span className="text-[9px] px-2 py-0.5 rounded bg-[var(--surface-glass)] text-[var(--text-muted)] border border-[var(--border-subtle)]">
-                      {sol.tag}
+                    <span className="font-mono text-2xl font-black text-[var(--accent-cyan)] tracking-wider">
+                      {item.step}
                     </span>
+                    <div className="p-2.5 rounded-xl border border-[var(--border-subtle)] bg-[var(--bg-secondary)] shadow-inner group-hover:scale-110 transition-transform">
+                      {item.icon}
+                    </div>
                   </div>
 
-                  <h3 className="font-display font-bold text-lg text-[var(--text-primary)]">
-                    {sol.title}
+                  <h3 className="font-display font-bold text-xl text-[var(--text-primary)] group-hover:text-[var(--accent-cyan)] transition-colors">
+                    {item.title}
                   </h3>
 
-                  <p className="text-xs text-[var(--text-secondary)] font-body leading-relaxed">
-                    {sol.desc}
+                  <p className="text-xs sm:text-sm text-[var(--text-secondary)] font-body leading-relaxed">
+                    {item.desc}
                   </p>
                 </div>
 
-                <div className="pt-3 border-t border-[var(--border-subtle)]/60 text-[10px] text-[var(--accent-cyan)] font-bold">
-                  ACTIVE AT 60 HZ CYCLE
+                <div className="pt-3 border-t border-[var(--border-subtle)]/60 flex items-center justify-between text-[10px] font-mono text-[var(--text-muted)]">
+                  <span>STAGE {item.step}</span>
+                  <span className="text-[var(--accent-cyan)] font-semibold">DECISION PIPELINE</span>
                 </div>
               </GlassCard>
             </ScrollReveal>

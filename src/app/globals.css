@@ -22,7 +22,6 @@
   --text-muted: #4a5568;
   --border-subtle: rgba(0, 240, 255, 0.12);
   --grid-line: rgba(0, 240, 255, 0.06);
-  --watermark-stroke: rgba(0, 240, 255, 0.22);
   color-scheme: dark;
 }
 
@@ -43,7 +42,6 @@
   --text-muted: #94a3b8;
   --border-subtle: rgba(0, 119, 204, 0.15);
   --grid-line: rgba(0, 119, 204, 0.08);
-  --watermark-stroke: rgba(0, 119, 204, 0.18);
   color-scheme: light;
 }
 
@@ -110,11 +108,3 @@ body {
 .sos-bg-pulse {
   animation: pulse-red-bg 2s infinite ease-in-out;
 }
-
-.footer-watermark-stroke {
-  -webkit-text-stroke: 1.5px var(--watermark-stroke);
-  color: transparent;
-  opacity: 0.95;
-  transition: opacity 0.3s ease;
-}
-
