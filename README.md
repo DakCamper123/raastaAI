@@ -327,10 +327,10 @@ raasta-ai/
 | Member | Role | Focus & Core Contributions |
 | :--- | :--- | :--- |
 | **Prateek** | `Team Lead` | System Architecture & Hardware-in-the-Loop Integration |
-| **Swasteek** | `Backend Eng.` | Data Pipeline, Control Logic & Deterministic Stateflow |
+| **Swasteek** | `Frontend & Backend Eng.` | Data Pipeline, Control Logic & Deterministic Stateflow |
 | **Ayush** | `Model Trainer` | Trajectory Prediction & Deep Sensor Fusion (BEVFormer) |
 | **Rituraj** | `Simulation Eng.` | RoadRunner Scenario Synthesis & Non-Linear Vehicle Dynamics |
-| **Shweta** | `UI/UX Designer` | Cockpit HUD Interface, Visual Hierarchy & Telemetry Dashboard |
+| **Shweta** | `Presenter` | Cockpit HUD Interface, Visual Hierarchy & Telemetry Dashboard |
 | **Shreya** | `Debug Eng.` | Closed-Loop Fault Analysis, Validation & Functional Safety |
 
 ---
