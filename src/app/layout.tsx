@@ -5,6 +5,7 @@ import { AuthProvider } from '@/context/AuthContext';
 import { SimulationProvider } from '@/context/SimulationContext';
 import { SOSProvider } from '@/context/SOSContext';
 import { StickyHeader } from '@/components/layout/StickyHeader';
+import { Footer } from '@/components/layout/Footer';
 import { SOSModal } from '@/components/emergency/SOSModal';
 import { AuthModal } from '@/components/auth/AuthModal';
 
@@ -46,25 +47,8 @@ export default function RootLayout({
                 <main id="main-content" className="flex-1 w-full flex flex-col">
                   {children}
                 </main>
-              {/* Footer */}
-              <footer className="w-full border-t border-[var(--border-subtle)] bg-[var(--bg-secondary)]/80 py-8 px-4 sm:px-6 font-mono text-xs text-[var(--text-secondary)]">
-                <div className="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
-                  <div className="flex flex-col gap-1">
-                    <span className="font-display font-bold text-sm text-[var(--text-primary)]">
-                      NAVDRISHTI • AUTONOMOUS SYSTEMS LABORATORY
-                    </span>
-                    <span className="text-[11px] text-[var(--text-muted)]">
-                      ISO 26262 ASIL-D Aligned Kinodynamic Safety Platform • 2026
-                    </span>
-                  </div>
-                  <div className="flex items-center gap-4 text-[11px]">
-                    <span>NH-48 GNSS RTK: ±1.4 CM</span>
-                    <span>•</span>
-                    <span className="text-[var(--accent-cyan)]">5G NR C-V2X 60 HZ</span>
-                  </div>
-                </div>
-              </footer>
-            </SOSProvider>
+                <Footer />
+              </SOSProvider>
           </SimulationProvider>
         </AuthProvider>
       </ThemeProvider>
