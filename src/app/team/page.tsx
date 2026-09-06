@@ -17,7 +17,7 @@ export default function TeamPage() {
         <SectionHeading
           tag="AUTONOMOUS SYSTEMS LABORATORY"
           title="Autonomous Navigation Core Team"
-          description="Pioneering researchers and robotics engineers combining deep sensor fusion, non-linear kinematics, simulation engineering, and functional safety for India's unstructured road network."
+          description="Building the future of autonomous driving through advanced simulation and safety tech for complex road networks."
         />
       </ScrollReveal>
 
