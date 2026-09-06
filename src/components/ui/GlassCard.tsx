@@ -9,7 +9,7 @@ import React from 'react';
 
 interface GlassCardProps extends React.HTMLAttributes<HTMLDivElement> {
   children: React.ReactNode;
-  glow?: 'cyan' | 'amber' | 'danger' | 'none';
+  glow?: 'cyan' | 'emerald' | 'amber' | 'danger' | 'none';
   variant?: 'default' | 'elevated' | 'danger';
   className?: string;
 }
@@ -22,7 +22,7 @@ export function GlassCard({
   ...props
 }: GlassCardProps) {
   let glowClasses = '';
-  if (glow === 'cyan') glowClasses = 'hover:border-[var(--accent-cyan)] hover:shadow-cyan-glow';
+  if (glow === 'cyan' || glow === 'emerald') glowClasses = 'hover:border-[var(--accent-cyan)] hover:shadow-cyan-glow';
   if (glow === 'amber') glowClasses = 'hover:border-[var(--accent-amber)] hover:shadow-amber-glow';
   if (glow === 'danger') glowClasses = 'hover:border-[var(--danger-red)] hover:shadow-[0_0_20px_rgba(255,51,85,0.4)]';
 

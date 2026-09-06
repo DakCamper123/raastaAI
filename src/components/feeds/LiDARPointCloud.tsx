@@ -28,7 +28,7 @@ export function LiDARPointCloud({ className = '' }: { className?: string }) {
       const maxR = cy - 4;
 
       // 1. Concentric Range Rings
-      ctx.strokeStyle = 'rgba(0, 240, 255, 0.18)';
+      ctx.strokeStyle = 'rgba(16, 185, 129, 0.22)';
       ctx.lineWidth = 1;
 
       for (let r = 8; r <= maxR; r += 8) {
@@ -45,9 +45,9 @@ export function LiDARPointCloud({ className = '' }: { className?: string }) {
       ctx.lineTo(cx + maxR + 4, cy);
       ctx.stroke();
 
-      // 2. Rotating Radar/LiDAR Sweep Line
+      // 2. Rotating Radar/LiDAR Sweep Line (Tactical Radar Sweep)
       angle += 0.05;
-      ctx.strokeStyle = 'rgba(0, 240, 255, 0.9)';
+      ctx.strokeStyle = 'rgba(16, 185, 129, 0.9)';
       ctx.lineWidth = 1.2;
       ctx.beginPath();
       ctx.moveTo(cx, cy);
@@ -55,7 +55,7 @@ export function LiDARPointCloud({ className = '' }: { className?: string }) {
       ctx.stroke();
 
       // Sweep Sector Gradient
-      ctx.fillStyle = 'rgba(0, 240, 255, 0.1)';
+      ctx.fillStyle = 'rgba(16, 185, 129, 0.15)';
       ctx.beginPath();
       ctx.moveTo(cx, cy);
       ctx.arc(cx, cy, maxR, angle - 0.35, angle);
@@ -63,7 +63,7 @@ export function LiDARPointCloud({ className = '' }: { className?: string }) {
       ctx.fill();
 
       // 3. Simulated Dynamic Point Cloud Cluster Returns
-      ctx.fillStyle = '#ffaa00';
+      ctx.fillStyle = '#f59e0b';
       const points = [
         { r: maxR * 0.45, theta: 0.8 },
         { r: maxR * 0.5, theta: 0.84 },
@@ -102,7 +102,7 @@ export function LiDARPointCloud({ className = '' }: { className?: string }) {
       </div>
 
       {/* Compact Canvas Container */}
-      <div className="relative h-14 w-full rounded overflow-hidden border border-[var(--border-subtle)] bg-[#040810] flex items-center justify-center">
+      <div className="relative h-14 w-full rounded overflow-hidden border border-[var(--border-subtle)] bg-[#0a101f] flex items-center justify-center">
         <canvas ref={canvasRef} width={140} height={70} className="w-full h-full block" />
       </div>
     </GlassCard>

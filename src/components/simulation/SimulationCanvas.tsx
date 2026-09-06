@@ -47,12 +47,12 @@ export function SimulationCanvas({ className = '' }: { className?: string }) {
     const roadHalfWidth = (scenario.roadWidth / 2) * ppm;
     const roadLength = 2000 * ppm;
 
-    // Grass / Mud shoulders
-    ctx.fillStyle = isDark ? '#141c2b' : '#cbd5e1';
+    // Grass / Mud shoulders (Deep Slate Charcoal terrain)
+    ctx.fillStyle = isDark ? '#0f172a' : '#cbd5e1';
     ctx.fillRect(-200 * ppm, -roadHalfWidth - 80, roadLength, roadHalfWidth * 2 + 160);
 
     // Asphalt pavement
-    ctx.fillStyle = isDark ? '#0b101b' : '#f1f5f9';
+    ctx.fillStyle = isDark ? '#090d16' : '#f1f5f9';
     ctx.fillRect(-200 * ppm, -roadHalfWidth, roadLength, roadHalfWidth * 2);
 
     // Road Edge Solid Lines
@@ -66,7 +66,7 @@ export function SimulationCanvas({ className = '' }: { className?: string }) {
     ctx.stroke();
 
     // Centerline Dashes
-    ctx.strokeStyle = '#ffaa00';
+    ctx.strokeStyle = '#f59e0b';
     ctx.lineWidth = 2;
     ctx.setLineDash([18, 14]);
     ctx.beginPath();

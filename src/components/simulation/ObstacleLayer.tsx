@@ -22,7 +22,7 @@ export function drawObstacles(
     if (obs.type === 'cow') {
       // Zebu Cow (Bovine) with distinct hump and horns
       ctx.fillStyle = isDark ? '#b45309' : '#d97706';
-      ctx.strokeStyle = '#ffaa00';
+      ctx.strokeStyle = '#f59e0b';
       ctx.lineWidth = 1.5;
 
       // Body
@@ -44,7 +44,7 @@ export function drawObstacles(
       ctx.fill();
     } else if (obs.type === 'rickshaw') {
       // Auto-Rickshaw (Yellow/Green characteristic hood)
-      ctx.fillStyle = '#ffaa00';
+      ctx.fillStyle = '#f59e0b';
       ctx.strokeStyle = '#000000';
       ctx.lineWidth = 2;
 
@@ -87,7 +87,7 @@ export function drawObstacles(
     ctx.translate(obs.x * pixelsPerMeter, obs.y * pixelsPerMeter);
 
     ctx.fillStyle = isDark ? 'rgba(0, 0, 0, 0.75)' : 'rgba(255, 255, 255, 0.9)';
-    ctx.strokeStyle = obs.color || '#00f0ff';
+    ctx.strokeStyle = obs.color || '#10b981';
     ctx.lineWidth = 1;
 
     const labelText = `${obs.label} [TTC: ${obs.ttc}s]`;
@@ -98,7 +98,7 @@ export function drawObstacles(
     ctx.fillRect(-textWidth / 2 - pad, -obs.width * pixelsPerMeter - 16, textWidth + pad * 2, 14);
     ctx.strokeRect(-textWidth / 2 - pad, -obs.width * pixelsPerMeter - 16, textWidth + pad * 2, 14);
 
-    ctx.fillStyle = obs.color || '#00f0ff';
+    ctx.fillStyle = obs.color || '#10b981';
     ctx.fillText(labelText, -textWidth / 2, -obs.width * pixelsPerMeter - 6);
 
     ctx.restore();

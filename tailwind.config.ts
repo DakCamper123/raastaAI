@@ -20,6 +20,7 @@ const config: Config = {
         },
         accent: {
           cyan: "var(--accent-cyan)",
+          emerald: "var(--accent-cyan)",
           amber: "var(--accent-amber)",
         },
         danger: {
@@ -42,6 +43,7 @@ const config: Config = {
       },
       boxShadow: {
         "cyan-glow": "var(--accent-cyan-glow)",
+        "emerald-glow": "var(--accent-cyan-glow)",
         "amber-glow": "var(--accent-amber-glow)",
       },
       fontFamily: {

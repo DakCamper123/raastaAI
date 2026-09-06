@@ -82,7 +82,7 @@ export function APFFormulaRenderer() {
     ctx.putImageData(imgData, 0, 0);
 
     // Draw Obstacle & Goal Markers
-    ctx.fillStyle = '#00f0ff';
+    ctx.fillStyle = '#10b981';
     ctx.beginPath();
     ctx.arc(goalX, goalY, 6, 0, Math.PI * 2);
     ctx.fill();
@@ -92,7 +92,7 @@ export function APFFormulaRenderer() {
     ctx.arc(obsX, obsY, 8, 0, Math.PI * 2);
     ctx.fill();
 
-    ctx.strokeStyle = '#ffaa00';
+    ctx.strokeStyle = '#f59e0b';
     ctx.setLineDash([4, 4]);
     ctx.beginPath();
     ctx.arc(obsX, obsY, rho0 * 10, 0, Math.PI * 2);
