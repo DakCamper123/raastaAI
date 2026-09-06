@@ -47,8 +47,7 @@ export function PhilosophyHero() {
 
         {/* Subtitle / Value Proposition */}
         <p className="max-w-2xl text-sm sm:text-base text-[var(--text-secondary)] font-body leading-relaxed">
-          Taming the chaotic dynamics of heterogeneous traffic, unmarked corridors, stray cattle,
-          and aggressive lane cuts using <strong>Kinodynamic Artificial Potential Fields (APF)</strong> and <strong>Dynamic Window Approach (DWA)</strong>.
+          Navigating chaotic traffic, stray animals, and unpredictable road hazards in real time using intelligent AI path planning.
         </p>
 
         {/* Call to Actions */}
