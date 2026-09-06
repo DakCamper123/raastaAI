@@ -330,7 +330,7 @@ raasta-ai/
 | **Swasteek** | `Frontend & Backend Eng.` | Data Pipeline, Control Logic & Deterministic Stateflow |
 | **Ayush** | `Model Trainer` | Trajectory Prediction & Deep Sensor Fusion (BEVFormer) |
 | **Rituraj** | `Simulation Eng.` | RoadRunner Scenario Synthesis & Non-Linear Vehicle Dynamics |
-| **Shweta** | `Presenter` | Cockpit HUD Interface, Visual Hierarchy & Telemetry Dashboard |
+| **Shweta** | `Presenter` | Executive Pitching, Live Product Demonstration & Strategic System Narrative |
 | **Shreya** | `Debug Eng.` | Closed-Loop Fault Analysis, Validation & Functional Safety |
 
 ---

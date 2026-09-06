@@ -59,10 +59,10 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Shweta',
     initials: 'SH',
     role: 'Presenter',
-    subTag: 'HUD Interface, Visual Hierarchy & Dashboard',
-    focusArea: 'Cockpit HUD Interface, Visual Hierarchy & Telemetry Dashboard',
+    subTag: 'Pitch Strategy, Product Vision & Stakeholder Narrative',
+    focusArea: 'Executive Pitching, Live Product Demonstration & Strategic System Narrative',
     icon: '🎙️',
-    badges: ['Cyber-HUD', 'Design System', 'Telemetry Viz'],
+    badges: ['Pitch Lead', 'Product Vision', 'Demo Master'],
   },
   {
     id: 'shreya',
