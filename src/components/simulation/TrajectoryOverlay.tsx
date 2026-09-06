@@ -14,7 +14,7 @@ export function drawTrajectory(
   if (!trajectory || trajectory.length < 2) return;
 
   ctx.save();
-  ctx.strokeStyle = isDark ? '#10b981' : '#059669';
+  ctx.strokeStyle = isDark ? '#00f0ff' : '#0077cc';
   ctx.lineWidth = 3;
   ctx.setLineDash([6, 4]);
 
@@ -28,7 +28,7 @@ export function drawTrajectory(
 
   // Draw end-point target bead
   const last = trajectory[trajectory.length - 1];
-  ctx.fillStyle = isDark ? '#10b981' : '#059669';
+  ctx.fillStyle = isDark ? '#00ff88' : '#16a34a';
   ctx.setLineDash([]);
   ctx.beginPath();
   ctx.arc(last.x * pixelsPerMeter, last.y * pixelsPerMeter, 5, 0, Math.PI * 2);

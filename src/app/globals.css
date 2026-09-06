@@ -6,46 +6,42 @@
 @tailwind utilities;
 
 :root {
-  /* THEME: Cyber-Military / Defense Tech (Tactical Night-Vision HUD) */
-  --bg-primary: #0f172a; /* Deep Slate Charcoal */
-  --bg-secondary: #141f36; /* Elevated Tactical Slate */
-  --bg-tertiary: #1e293b; /* Tactical Slate Panel (Slate-800) */
-  --surface-glass: rgba(15, 23, 42, 0.78);
-  --accent-cyan: #10b981; /* Neon Emerald Green (Tactical Night-Vision / Radar) */
-  --accent-cyan-glow: 0 0 20px rgba(16, 185, 129, 0.45);
-  --accent-emerald: #10b981;
-  --accent-emerald-glow: 0 0 20px rgba(16, 185, 129, 0.45);
-  --accent-amber: #f59e0b; /* Warning Amber / Gold */
-  --accent-amber-glow: 0 0 15px rgba(245, 158, 11, 0.35);
+  /* THEME A: Obsidian Cyber-HUD (Default Dark) */
+  --bg-primary: #06090e;
+  --bg-secondary: #0a0f18;
+  --bg-tertiary: #111827;
+  --surface-glass: rgba(10, 15, 24, 0.72);
+  --accent-cyan: #00f0ff;
+  --accent-cyan-glow: 0 0 20px rgba(0, 240, 255, 0.4);
+  --accent-amber: #ffaa00;
+  --accent-amber-glow: 0 0 15px rgba(255, 170, 0, 0.3);
   --danger-red: #ff3355;
-  --success-green: #10b981;
-  --text-primary: #f1f5f9;
-  --text-secondary: #94a3b8;
-  --text-muted: #64748b;
-  --border-subtle: rgba(16, 185, 129, 0.18);
-  --grid-line: rgba(16, 185, 129, 0.08);
+  --success-green: #00ff88;
+  --text-primary: #e8edf5;
+  --text-secondary: #8892a4;
+  --text-muted: #4a5568;
+  --border-subtle: rgba(0, 240, 255, 0.12);
+  --grid-line: rgba(0, 240, 255, 0.06);
   color-scheme: dark;
 }
 
 [data-theme="light"] {
-  /* THEME: Defense Tech Telemetry (Field Spec Light) */
-  --bg-primary: #f8fafc;
+  /* THEME B: Titanium Lab Telemetry (Light) */
+  --bg-primary: #f4f6fa;
   --bg-secondary: #ffffff;
-  --bg-tertiary: #f1f5f9;
-  --surface-glass: rgba(255, 255, 255, 0.85);
-  --accent-cyan: #059669; /* Deep Tactical Emerald */
-  --accent-cyan-glow: 0 0 12px rgba(5, 150, 105, 0.25);
-  --accent-emerald: #059669;
-  --accent-emerald-glow: 0 0 12px rgba(5, 150, 105, 0.25);
-  --accent-amber: #d97706; /* Tactical Warning Amber */
-  --accent-amber-glow: 0 0 10px rgba(217, 119, 6, 0.2);
+  --bg-tertiary: #e8ecf2;
+  --surface-glass: rgba(255, 255, 255, 0.82);
+  --accent-cyan: #0077cc;
+  --accent-cyan-glow: 0 0 12px rgba(0, 119, 204, 0.2);
+  --accent-amber: #d97706;
+  --accent-amber-glow: 0 0 10px rgba(217, 119, 6, 0.15);
   --danger-red: #dc2626;
-  --success-green: #059669;
-  --text-primary: #0f172a;
+  --success-green: #16a34a;
+  --text-primary: #1e293b;
   --text-secondary: #475569;
   --text-muted: #94a3b8;
-  --border-subtle: rgba(16, 185, 129, 0.22);
-  --grid-line: rgba(16, 185, 129, 0.08);
+  --border-subtle: rgba(0, 119, 204, 0.15);
+  --grid-line: rgba(0, 119, 204, 0.08);
   color-scheme: light;
 }
 
@@ -87,8 +83,7 @@ body {
   border: 1px solid var(--border-subtle);
 }
 
-.glow-cyan,
-.glow-emerald {
+.glow-cyan {
   text-shadow: 0 0 12px var(--accent-cyan);
 }
 

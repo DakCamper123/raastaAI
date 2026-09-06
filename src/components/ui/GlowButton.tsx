@@ -9,7 +9,7 @@ import React from 'react';
 
 interface GlowButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  variant?: 'cyan' | 'emerald' | 'amber' | 'danger' | 'ghost';
+  variant?: 'cyan' | 'amber' | 'danger' | 'ghost';
   size?: 'sm' | 'md' | 'lg';
   icon?: React.ReactNode;
   className?: string;
@@ -30,13 +30,12 @@ export function GlowButton({
   let variantClasses = '';
   switch (variant) {
     case 'cyan':
-    case 'emerald':
       variantClasses =
-        'bg-[var(--accent-cyan)] text-[#0f172a] font-semibold hover:bg-white hover:shadow-cyan-glow border border-[var(--accent-cyan)]';
+        'bg-[var(--accent-cyan)] text-[#06090e] font-semibold hover:bg-white hover:shadow-cyan-glow border border-[var(--accent-cyan)]';
       break;
     case 'amber':
       variantClasses =
-        'bg-[var(--accent-amber)] text-[#0f172a] font-semibold hover:bg-white hover:shadow-amber-glow border border-[var(--accent-amber)]';
+        'bg-[var(--accent-amber)] text-[#06090e] font-semibold hover:bg-white hover:shadow-amber-glow border border-[var(--accent-amber)]';
       break;
     case 'danger':
       variantClasses =

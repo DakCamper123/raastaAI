@@ -42,8 +42,8 @@ export function RoadParticleField({ className = '' }: { className?: string }) {
     const positions = new Float32Array(particleCount * 3);
     const colors = new Float32Array(particleCount * 3);
 
-    const colorPrimary = new THREE.Color(isDark ? 0x10b981 : 0x059669);
-    const colorSecondary = new THREE.Color(isDark ? 0xf59e0b : 0xd97706);
+    const colorPrimary = new THREE.Color(isDark ? 0x00f0ff : 0x0077cc);
+    const colorSecondary = new THREE.Color(isDark ? 0xffaa00 : 0xd97706);
 
     for (let i = 0; i < particleCount; i++) {
       // Create lanes (-8 to +8 meters wide, depth -100 to +10)

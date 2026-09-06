@@ -26,11 +26,11 @@ export function generateCarDiagnosticPDF(
   const timestamp = new Date().toLocaleString('en-US', { timeZoneName: 'short' });
   const filename = `RaastaAI_Vehicle_Report_${Date.now()}.pdf`;
 
-  // Colors: Cyber-Military / Defense Tech
-  const primaryDark = [15, 23, 42]; // #0f172a Deep Slate Charcoal
-  const emerald = [16, 185, 129]; // #10b981 Neon Emerald Accent
+  // Colors
+  const primaryDark = [10, 15, 24]; // #0a0f18
+  const cyan = [0, 180, 216]; // Cyan accent
   const green = [16, 185, 129];
-  const amber = [245, 158, 11]; // #f59e0b Warning Amber
+  const amber = [245, 158, 11];
   const grayText = [100, 116, 139];
   const darkText = [30, 41, 59];
 
@@ -43,7 +43,7 @@ export function generateCarDiagnosticPDF(
   doc.setFontSize(16);
   doc.setTextColor(255, 255, 255);
   doc.text('RAASTA', 14, 14);
-  doc.setTextColor(emerald[0], emerald[1], emerald[2]);
+  doc.setTextColor(cyan[0], cyan[1], cyan[2]);
   doc.text('.AI', 41, 14);
 
   doc.setFontSize(8);
@@ -96,7 +96,7 @@ export function generateCarDiagnosticPDF(
 
     if (badge) {
       doc.setFontSize(7.5);
-      doc.setTextColor(emerald[0], emerald[1], emerald[2]);
+      doc.setTextColor(cyan[0], cyan[1], cyan[2]);
       doc.text(badge, 160, y + 4.5);
     }
     y += 8;

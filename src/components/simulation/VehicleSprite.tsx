@@ -22,8 +22,8 @@ export function drawEgoVehicle(
   // 1. 360° LiDAR Sensor Beam Sweep Visualization
   ctx.save();
   const grad = ctx.createRadialGradient(0, 0, 5, 0, 0, 18 * pixelsPerMeter);
-  grad.addColorStop(0, isDark ? 'rgba(16, 185, 129, 0.25)' : 'rgba(5, 150, 105, 0.2)');
-  grad.addColorStop(0.7, isDark ? 'rgba(16, 185, 129, 0.06)' : 'rgba(5, 150, 105, 0.04)');
+  grad.addColorStop(0, isDark ? 'rgba(0, 240, 255, 0.25)' : 'rgba(0, 119, 204, 0.2)');
+  grad.addColorStop(0.7, isDark ? 'rgba(0, 240, 255, 0.06)' : 'rgba(0, 119, 204, 0.04)');
   grad.addColorStop(1, 'rgba(0, 0, 0, 0)');
   ctx.fillStyle = grad;
   ctx.beginPath();
@@ -35,7 +35,7 @@ export function drawEgoVehicle(
 
   // 2. Vehicle Chassis Body
   ctx.fillStyle = ego.emergencyStop ? '#ff3355' : isDark ? '#0f172a' : '#ffffff';
-  ctx.strokeStyle = ego.emergencyStop ? '#ff3355' : isDark ? '#10b981' : '#059669';
+  ctx.strokeStyle = ego.emergencyStop ? '#ff3355' : isDark ? '#00f0ff' : '#0077cc';
   ctx.lineWidth = 2.5;
 
   ctx.beginPath();
@@ -44,11 +44,11 @@ export function drawEgoVehicle(
   ctx.stroke();
 
   // Windshield
-  ctx.fillStyle = isDark ? 'rgba(16, 185, 129, 0.35)' : 'rgba(5, 150, 105, 0.25)';
+  ctx.fillStyle = isDark ? 'rgba(0, 240, 255, 0.35)' : 'rgba(0, 119, 204, 0.25)';
   ctx.fillRect(-l / 6, -w / 2 + 3, l / 3, w - 6);
 
   // Headlights
-  ctx.fillStyle = '#f59e0b';
+  ctx.fillStyle = '#ffaa00';
   ctx.fillRect(l / 2 - 3, -w / 2 + 2, 3, 5);
   ctx.fillRect(l / 2 - 3, w / 2 - 7, 3, 5);
 
@@ -84,7 +84,7 @@ export function drawEgoVehicle(
   ctx.restore();
 
   // Roof LiDAR Puck
-  ctx.fillStyle = '#10b981';
+  ctx.fillStyle = '#00f0ff';
   ctx.beginPath();
   ctx.arc(0, 0, 4, 0, Math.PI * 2);
   ctx.fill();
