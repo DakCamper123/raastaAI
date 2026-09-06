@@ -327,7 +327,7 @@ raasta-ai/
 | Member | Role | Focus & Core Contributions |
 | :--- | :--- | :--- |
 | **Prateek** | `Team Lead` | System Architecture & Hardware-in-the-Loop Integration |
-| **Swasteek** | `Frontend & Backend Eng.` | Data Pipeline, Control Logic & Deterministic Stateflow |
+| **Swasteek** | `Frontend & Backend Eng.` | End-to-End Data Flow, Supabase Backend Integration & Responsive Simulation UI |
 | **Ayush** | `Model Trainer` | Trajectory Prediction & Deep Sensor Fusion (BEVFormer) |
 | **Rituraj** | `Simulation Eng.` | RoadRunner Scenario Synthesis & Non-Linear Vehicle Dynamics |
 | **Shweta** | `Presenter` | Executive Pitching, Live Product Demonstration & Strategic System Narrative |

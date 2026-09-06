@@ -29,10 +29,10 @@ export const TEAM_MEMBERS: TeamMember[] = [
     name: 'Swasteek',
     initials: 'SW',
     role: 'Frontend & Backend Eng.',
-    subTag: 'Pipeline, Control Logic & Stateflow',
-    focusArea: 'Data Pipeline, Control Logic & Deterministic Stateflow',
+    subTag: 'Full-Stack Architecture, Real-Time Sync & UI Engineering',
+    focusArea: 'End-to-End Data Flow, Supabase Backend Integration & Responsive Simulation UI',
     icon: '⚙️',
-    badges: ['Stateflow', 'CAN-Bus Stack', 'Control Loops'],
+    badges: ['Full-Stack', 'Supabase', 'React / Tailwind'],
   },
   {
     id: 'ayush',
