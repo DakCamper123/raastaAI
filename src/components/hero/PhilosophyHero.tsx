@@ -10,7 +10,7 @@ import Link from 'next/link';
 import { RoadParticleField } from './RoadParticleField';
 import { AnimatedTagline } from './AnimatedTagline';
 import { GlowButton } from '@/components/ui/GlowButton';
-import { ShieldCheck, Play, Layers, Cpu, ArrowRight } from 'lucide-react';
+import { ShieldCheck, Play, Layers } from 'lucide-react';
 
 export function PhilosophyHero() {
   return (
@@ -61,11 +61,6 @@ export function PhilosophyHero() {
           <Link href="/scenarios">
             <GlowButton variant="ghost" size="lg" icon={<Layers className="w-5 h-5" />}>
               Explore 5 Edge Scenarios
-            </GlowButton>
-          </Link>
-          <Link href="/architecture">
-            <GlowButton variant="amber" size="lg" icon={<Cpu className="w-5 h-5" />}>
-              System Architecture <ArrowRight className="w-4 h-4 ml-1" />
             </GlowButton>
           </Link>
         </div>

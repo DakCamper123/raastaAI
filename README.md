@@ -27,13 +27,13 @@
   <b>A production-grade, zero-external-UI-library autonomous mobility simulator and diagnostic telemetry platform featuring 60 Hz kinematic physics, dynamic Artificial Potential Fields (APF), Dynamic Window Approach (DWA), dedicated Car Analysis Center, Supabase email authentication, cloud PDF storage, and full persistence.</b>
 </p>
 
-[Philosophy](#-the-navdrishti-philosophy) • [Car Analysis & Diagnostics](#-car-condition--analysis-center) • [Email Auth & Gated Access](#-free-email-authentication--gated-access) • [Cloud & Local Persistence](#-cloud--local-persistence-architecture) • [Simulation Cockpit](#-simulation-cockpit) • [Architecture](#-system-architecture) • [Mathematical Engine](#-mathematical-engine) • [Edge Scenarios](#-5-indian-road-edge-scenarios) • [Emergency SOS](#-emergency-sos--fail-safe-architecture) • [Team](#-engineering--research-team) • [Quickstart](#-quickstart--local-development)
+[Overview](#-the-navdrishti-overview) • [Car Analysis & Diagnostics](#-car-condition--analysis-center) • [Email Auth & Gated Access](#-free-email-authentication--gated-access) • [Cloud & Local Persistence](#-cloud--local-persistence-architecture) • [Simulation Cockpit](#-simulation-cockpit) • [Mathematical Engine](#-mathematical-engine) • [Edge Scenarios](#-5-indian-road-edge-scenarios) • [Emergency SOS](#-emergency-sos--fail-safe-architecture) • [Team](#-engineering--research-team) • [Quickstart](#-quickstart--local-development)
 
 </div>
 
 ---
 
-## 🧭 The NavDrishti Philosophy: Autonomy Where It Counts
+## 🧭 The NavDrishti Overview: Autonomy Where It Counts
 
 > *"If an autonomous vehicle can master Old Delhi's Chandni Chowk, navigate a monsoon ghat in Kerala, and out-negotiate an unmarked rural highway merge — it can drive anywhere on Planet Earth."*
 
@@ -270,10 +270,9 @@ navdrishti/
 ├── src/
 │   ├── app/
 │   │   ├── layout.tsx                  ← Root layout with ThemeProvider, AuthProvider, Header
-│   │   ├── page.tsx                    ← Philosophy & research landing page
+│   │   ├── page.tsx                    ← System overview & research landing page
 │   │   ├── dashboard/                  ← Simulation Cockpit (canvas, metrics, controls, feeds)
 │   │   ├── analysis/                   ← Car Condition & Diagnostics Center with PDF downloads
-│   │   ├── architecture/               ← Sensor fusion and hardware pipeline documentation
 │   │   ├── scenarios/                  ← 5 edge case simulation lab
 │   │   ├── emergency-sos/              ← Dedicated ASIL-D emergency intervention interface
 │   │   ├── team/                       ← Research and engineering team showcase

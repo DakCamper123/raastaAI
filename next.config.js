@@ -4,7 +4,16 @@ const nextConfig = {
   transpilePackages: ['three', 'katex'],
   images: {
     unoptimized: true
-  }
+  },
+  async redirects() {
+    return [
+      {
+        source: '/architecture',
+        destination: '/',
+        permanent: true,
+      },
+    ];
+  },
 };
 
 module.exports = nextConfig;

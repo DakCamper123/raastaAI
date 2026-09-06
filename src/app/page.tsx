@@ -1,7 +1,7 @@
 'use client';
 
 /**
- * NavDrishti - Landing Page (Philosophy & System Overview)
+ * NavDrishti - Landing Page (System Overview)
  */
 
 import React from 'react';
@@ -181,9 +181,9 @@ export default function HomePage() {
                   Enter Simulator
                 </GlowButton>
               </Link>
-              <Link href="/architecture">
+              <Link href="/scenarios">
                 <GlowButton variant="ghost" size="lg" icon={<Layers className="w-5 h-5" />}>
-                  Architecture
+                  Explore 5 Scenarios
                 </GlowButton>
               </Link>
             </div>

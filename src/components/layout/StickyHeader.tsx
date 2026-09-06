@@ -22,10 +22,9 @@ export function StickyHeader() {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
   const navLinks = [
-    { href: '/', label: 'Philosophy' },
+    { href: '/', label: 'Overview' },
     { href: '/dashboard', label: 'Simulation Cockpit' },
     { href: '/analysis', label: 'Car Analysis' },
-    { href: '/architecture', label: 'Architecture' },
     { href: '/scenarios', label: '5 Edge Cases' },
     { href: '/team', label: 'Research Team' },
   ];
