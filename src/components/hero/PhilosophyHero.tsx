@@ -63,26 +63,6 @@ export function PhilosophyHero() {
             </GlowButton>
           </Link>
         </div>
-
-        {/* Real-time Hardware Telemetry Ticker Mini */}
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 mt-8 w-full max-w-3xl pt-6 border-t border-[var(--border-subtle)]/60 font-mono text-xs">
-          <div className="flex flex-col items-center">
-            <span className="text-[var(--text-muted)] text-[10px]">INFERENCE CYCLE</span>
-            <span className="text-[var(--accent-cyan)] font-bold text-base">60 HZ (16 MS)</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-[var(--text-muted)] text-[10px]">GNSS POSITIONING</span>
-            <span className="text-[var(--text-primary)] font-bold text-base">±1.4 CM RTK</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-[var(--text-muted)] text-[10px]">URLLC C-V2X</span>
-            <span className="text-[var(--success-green)] font-bold text-base">&lt;11.2 MS LATENCY</span>
-          </div>
-          <div className="flex flex-col items-center">
-            <span className="text-[var(--text-muted)] text-[10px]">SENSOR FUSION</span>
-            <span className="text-[var(--accent-amber)] font-bold text-base">128-BEAM + 8 CAM</span>
-          </div>
-        </div>
       </div>
     </section>
   );
