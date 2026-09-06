@@ -45,8 +45,8 @@ const config: Config = {
         "amber-glow": "var(--accent-amber-glow)",
       },
       fontFamily: {
-        display: ["Outfit", "'Noto Sans Devanagari'", "sans-serif"],
-        body: ["Plus Jakarta Sans", "'Noto Sans Devanagari'", "sans-serif"],
+        display: ["Outfit", "sans-serif"],
+        body: ["Plus Jakarta Sans", "sans-serif"],
         mono: ["JetBrains Mono", "monospace"],
       },
       animation: {
