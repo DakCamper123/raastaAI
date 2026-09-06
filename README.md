@@ -298,6 +298,9 @@ raasta-ai/
 │   │   │   ├── SensorFeeds.tsx         ← 4-camera perception grid with auth lock overlay
 │   │   │   ├── LiDARPointCloud.tsx     ← Simulated 3D LiDAR point cloud stream
 │   │   │   └── CameraFeedCard.tsx      ← Optical feed card with detections count
+│   │   ├── team/
+│   │   │   ├── MemberCard.tsx          ← Cyber-HUD team member profile card
+│   │   │   └── TeamGrid.tsx            ← Core engineering team grid container
 │   │   └── emergency/
 │   │       ├── SOSModal.tsx            ← Emergency modal overlay
 │   │       └── CV2XPacketLog.tsx       ← 5G NR C-V2X URLLC packet stream
@@ -317,6 +320,7 @@ raasta-ai/
 │       ├── carAnalysis.ts              ← Detailed vehicle specifications & diagnostic metrics
 │       ├── scenarios.ts                ← 5 Indian edge case definitions
 │       ├── sensors.ts                  ← Sensor specifications & feed metadata
+│       ├── team.ts                     ← Autonomous Systems core engineering team profiles
 │       └── telemetry.ts                ← CAN-bus noise & C-V2X packet generator
 ```
 
@@ -329,7 +333,7 @@ raasta-ai/
 | **Prateek** | `Team Lead` | System Architecture & Hardware-in-the-Loop Integration |
 | **Swasteek** | `Frontend & Backend Eng.` | End-to-End Data Flow, Supabase Backend Integration & Responsive Simulation UI |
 | **Ayush** | `Model Trainer` | Trajectory Prediction & Deep Sensor Fusion (BEVFormer) |
-| **Rituraj** | `Simulation Eng.` | RoadRunner Scenario Synthesis & Non-Linear Vehicle Dynamics |
+| **Rituraj** | `Simulation Eng.` | SUMO Road Network Synthesis, CARLA Non-Linear Vehicle Dynamics & Digital Twin Integration |
 | **Shweta** | `Presenter` | Executive Pitching, Live Product Demonstration & Strategic System Narrative |
 | **Shreya** | `Debug Eng.` | Closed-Loop Fault Analysis, Validation & Functional Safety |
 
